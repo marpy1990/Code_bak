@@ -4,6 +4,8 @@
 继承自Block模型。
 实现了同一进程的不同线程间的通信机制。
 
+version 1.0.1: 添加了 get_bind_block 和 get_bind_address 两个方法，分别返回绑定的模块名和地址名
+
 Basic usage::
 
     >>> #thread1:
@@ -27,7 +29,7 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __date__ = "$Date: 2013-10-19$"
 
 # standard library modules
@@ -94,6 +96,13 @@ class GeneralSocket(object):
         except:
             raise SocketBindError(address)
         
+    def get_bind_block(self):
+        """返回绑定的模块名"""
+        return self.__block_bind
+
+    def get_bind_address(self):
+        """返回绑定的地址"""
+        return self.__address_bind
 
     def connect(self, block_name = None, address = None):
         """
