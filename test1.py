@@ -37,12 +37,14 @@ if __name__ == '__main__':
     #help(classmethod)
     #help(XmlTransport)
     #print threading.currentThread().ident
-    #help(ThreadManagement)
-    help(BlockServer)
+    #help(threading.Thread)
+    #help(BlockServer)
     #import socket
     #help(socket.socket.accept)
     #b = b2()
     #b.add(1,2)
+    #b= b2()
+    #print type(b).__name__
     """
     class B:
         def __init__(self,b):
@@ -63,6 +65,12 @@ if __name__ == '__main__':
     a= A()
     a.q()
     """
+    import Queue
+    q=Queue.Queue(maxsize = 0)
+    q.put((1,2))
+    print q.get()
+    q.put((1,(1,2)))
+    print q.get()
     
 
 
