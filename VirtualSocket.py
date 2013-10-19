@@ -4,6 +4,8 @@
 继承自Block模型。
 实现了同一进程的不同线程间的通信机制。
 
+version 1.0.1: send不再使用同步机制
+
 Basic usage::
 
     >>> #thread1:
@@ -27,12 +29,11 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.0"
-__date__ = "$Date: 2013-10-16$"
+__version__ = "1.0.1"
+__date__ = "$Date: 2013-10-19$"
 
 # standard library modules
 import Queue
-import threading
 
 # exceptions
 class VirtualSocketNameError(Exception):
@@ -57,8 +58,8 @@ class VirtualSocket(object):
         name: 绑定名字，用于标识本socket，可以多次绑定
         """
         self.__accept_queue = None
-        self.__buff = None
-        self.__buff_sem = None
+        self.__send_queue = None
+        self.__recv_queue = None
         self.name = "Unknown"
         if not name == None:
             self.bind(name)
@@ -66,8 +67,8 @@ class VirtualSocket(object):
     def connect(self, name):
         """与名为name的模块建立连接"""
         target = VirtualSocket.find(name)
-        self.__buff = Queue.Queue(maxsize = 1)
-        self.__buff_sem = threading.Semaphore(0)
+        self.__send_queue = Queue.Queue(maxsize = 0)
+        self.__recv_queue = Queue.Queue(maxsize = 0)
         target.__accept_queue.put(self)
 
     def listen(self, *args, **kwargs):
@@ -87,24 +88,22 @@ class VirtualSocket(object):
     def accept(self):
         """获得连入的VirtualSocket，需要先执行listen"""
         s = self.__accept_queue.get()
+        s.__send_queue, s.__recv_queue = s.__recv_queue, s.__send_queue
         return s, s.name
 
     def send(self, text):
         """建立连接后，向VirtualSocket写入值"""
-        self.__buff.put(text)
-        self.__buff_sem.acquire()
+        self.__send_queue.put(text)
         
-
     def recv(self, *args, **kwargs):
         """建立连接后，从VirtualSocket读出值"""
-        text = self.__buff.get()
-        self.__buff_sem.release()
+        text = self.__recv_queue.get()
         return text
 
     def close(self):
         """关闭连接"""
-        self.__buff = None
-        self.__buff_sem = None
+        #self.__send_queue = None
+        self.__recv_queue = None
         self.__accept_queue = None
 
     @staticmethod
@@ -123,24 +122,28 @@ if __name__ == "__main__":
     s2 = VirtualSocket()
     s2.bind("s2")
     s3 = VirtualSocket()
+    s3.bind("s3")
     s1.listen()
     @new_thread
     def test1(cls):
-        while True:
-            a,name = s1.accept()
-            text = a.recv()
-            print "test1 receive "+text+" from "+name
-            sleep(2)
-            a.send("check1")
-            a.close()
+        try:
+            while True:
+                a,name = s1.accept()
+                text = a.recv()
+                print "test1 receive "+text+" from "+name
+                sleep(2)
+                a.send("check1")
+                a.close()
+        except:
+            print "out"
 
     @new_thread
     def test2(cls):
         s2.connect("s1")
-        #s2.send("msg1")
-        #text2 = s2.recv()
-        #print "test2 receive "+text2
-        #s2.close()
+        s2.send("msg1")
+        text2 = s2.recv()
+        print "test2 receive "+text2
+        s2.close()
 
     @new_thread
     def test3(cls):
