@@ -6,6 +6,8 @@
 实现了VirtuaSite与外部端口的socket通信。
 可以通过继承，实现模块化的完整功能
 
+version 1.1.0: 传输机制不再采用VirtualSocket与socket并行，而是采用GeneralSocket统一处理，重写了与之有关的方法
+
 Basic usage::
 
     >>> site = BlockServer("site1")
@@ -19,26 +21,19 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.0"
-__date__ = "$Date: 2013-10-17$"
+__version__ = "1.1.0"
+__date__ = "$Date: 2013-10-19$"
 
 # standard library modules
-import socket
 import threading
-import Queue
 import time
 
 # user library modules
 import Block
 from ThreadManagement import*
-from VirtualSocket import*
+from GeneralSocket import*
 
 # exceptions
-class SocketBindError(Exception):
-    """端口绑定错误"""
-    def __init__(self, address):
-        Exception.__init__(self, "端口 "+repr(address)+" 无法绑定或已经被绑定过")
-
 class CannotFindCurrentSocketError(Exception):
     """名称表中找不到对应VirtualSocket"""
     def __init__(self, thread_info):
@@ -47,11 +42,6 @@ class CannotFindCurrentSocketError(Exception):
 # classes        
 class BlockServer(ThreadManagement):
     """虚拟站点模型，支持网络通信"""
-    
-    __LOCAL = 1     #连接模式：本地内存
-    __REMOTE = 2    #连接模式：网络端口
-
-    __MAX_LISTEN = 65535    #最大监听数
 
     def __init__(self, name, address = None):
         """
@@ -63,31 +53,18 @@ class BlockServer(ThreadManagement):
         self.__is_start = False
         self.__wait_sem = None
         self.__is_handle = False
-        self.__trans_type = BlockServer.__LOCAL
-        self.__address_bind = None
-        self.__local_socket = VirtualSocket(name)
-        self.__remote_socket = socket.socket()
-        self.__socket_queue = Queue.Queue(maxsize = 0)
-        self.__local_socket.listen()
-        if not address == None:
-            self.bind(address)
+        self.__socket = GeneralSocket(name, address)
 
     def bind(self, address):
         """
         绑定网络端口，开启与外部网络的通信功能
         address: 网络地址，形式为(ip, port)
         """
-        self.__trans_type = self.__trans_type|BlockServer.__REMOTE
-        try:
-            self.__remote_socket.bind(address)
-        except:
-            raise SocketBindError(address)
-        self.__address_bind = address
-        self.__remote_socket.listen(BlockServer.__MAX_LISTEN)
+        self.__socket.bind(address = address)
 
-    def address_bind(self):
+    def get_bind_address(self):
         """返回绑定的网络地址(ip, port)"""
-        return self.__address_bind
+        return self.__socket.address_bind()
 
     def start(self):
         """
@@ -121,20 +98,14 @@ class BlockServer(ThreadManagement):
 
     def start_accept(self):
         """启动消息接收线程，该方法会随start()方法自动调用"""
-        if self.__trans_type & BlockServer.__LOCAL == BlockServer.__LOCAL:
-            self.__local_start_accept()
-        if self.__trans_type & BlockServer.__REMOTE == BlockServer.__REMOTE:
-            self.__remote_start_accept()
+        self.__socket.listen()
 
     def stop_accept(self):
         """
         停止消息接收线程
         调用该方法后，外部尝试连接本模块会触发异常
         """
-        if self.__trans_type & BlockServer.__LOCAL == BlockServer.__LOCAL:
-            self.__local_socket.close()
-        if self.__trans_type & BlockServer.__REMOTE == BlockServer.__REMOTE:
-            self.__remote_socket.close()
+        self.__socket.close()
 
     def stop(self):
         """停止消息接收和处理，并解除主线程的等待"""
@@ -169,32 +140,10 @@ class BlockServer(ThreadManagement):
         pass
 
     @new_thread
-    def __local_start_accept(self):
-        """开启内存消息接收功能"""
-        try:
-            while True:
-                msg_socket, name = self.__local_socket.accept()
-                _socket = BlockServer.__socket(msg_socket)
-                self.__socket_queue.put(_socket)
-        except:
-            pass
-
-    @new_thread
-    def __remote_start_accept(self):
-        """开启网络消息接收功能"""
-        try:
-            while True:
-                msg_socket, address = self.__remote_socket.accept()
-                _socket = BlockServer.__socket(msg_socket)
-                self.__socket_queue.put(_socket)
-        except:
-            pass
-
-    @new_thread
     def __handle_socket(self):
         """从链接槽中提取外部的链接"""
         while self.__is_handle:
-            msg_socket = self.__socket_queue.get()
+            msg_socket, name = self.__socket.accept()
             self.__thread_handle_socket(msg_socket)
 
     @new_thread
@@ -242,18 +191,15 @@ class BlockServer(ThreadManagement):
         block1会收到text1和text3，而block2会收到text2
         """
         thread_info = self.current_thread_info()
-        _socket = None
-        connect_socket = None
-        if address == None:
-            connect_socket = VirtualSocket()
-            connect_socket.connect(name)
+        current_socket = GeneralSocket()
+        if not address == None:
+            current_socket.connect(address = address)
         else:
-            connect_socket = socket.socket()
-            connect_socket.connect(address)
-        _socket = BlockServer.__socket(connect_socket)
+            current_socket.connect(block_name = name)
+
         if not "connection" in thread_info:
             thread_info["connection"] = []
-        thread_info["connection"].insert(0, {"socket": _socket})
+        thread_info["connection"].insert(0, {"socket": current_socket})
 
     def disconnect(self):
         """
@@ -263,7 +209,7 @@ class BlockServer(ThreadManagement):
         """
         thread_info = self.current_thread_info()
         current_socket = self.get_current_socket()
-        current_socket.disconnect()
+        current_socket.close()
         del thread_info["connection"][0]
         return self
 
@@ -274,7 +220,7 @@ class BlockServer(ThreadManagement):
             connect_socket_list = thread_info["connection"]
             while not len(connect_socket_list) == 0:
                 current_socket = connect_socket_list[0]["socket"]
-                current_socket.disconnect()
+                current_socket.close()
                 del connect_socket_list[0]
 
     def get_current_socket(self):
@@ -315,46 +261,27 @@ class BlockServer(ThreadManagement):
         current_socket = self.get_current_socket()
         return current_socket.recv()
 
-    class __socket(object):
-        """用于维护连接的套接字，对外隐藏"""
-        def __init__(self, _socket):
-            """构造函数，确定嵌套字的内核"""
-            self.__socket = _socket
-
-        def send(self, text):
-            """发送消息"""
-            self.__socket.send(text)
-            return self
-
-        def recv(self, *arg, **kwargs):
-            """接收消息"""
-            return self.__socket.recv(65535)
-
-        def disconnect(self):
-            """断开连接"""
-            self.__socket.close()
-
 if __name__ == '__main__':
     import time
-    """
+    import socket
     v=BlockServer("a")
-    v.bind(("0.0.0.0",4000))
+    v.bind(("",4000))
     v.start()
 
     v2=BlockServer("b")
     v2.start()
     
-    """
+
     s=socket.socket()
-    s.connect(("219.228.127.119",1234))
+    s.connect(("219.228.127.123",4000))
     s.send("hello world")
     time.sleep(1)
-    """
+
     text = s.recv(1000)
     print text
     print v.thread_table
     s.send("new msg")
-    v.wait(5)
-    """
+    v.wait(10)
+
     
     
