@@ -6,6 +6,8 @@
 
 version 1.0.1: send不再使用同步机制
 
+version 1.0.2: 修正了close后的一个bug
+
 Basic usage::
 
     >>> #thread1:
@@ -29,7 +31,7 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __date__ = "$Date: 2013-10-19$"
 
 # standard library modules
@@ -87,8 +89,10 @@ class VirtualSocket(object):
 
     def accept(self):
         """获得连入的VirtualSocket，需要先执行listen"""
-        s = self.__accept_queue.get()
-        s.__send_queue, s.__recv_queue = s.__recv_queue, s.__send_queue
+        _s = self.__accept_queue.get()
+        s = VirtualSocket()
+        s.name = _s.name
+        s.__send_queue, s.__recv_queue = _s.__recv_queue, _s.__send_queue
         return s, s.name
 
     def send(self, text):
