@@ -336,6 +336,7 @@ class BlockServer(ThreadManagement):
 
 if __name__ == '__main__':
     import time
+    """
     v=BlockServer("a")
     v.bind(("0.0.0.0",4000))
     v.start()
@@ -343,12 +344,17 @@ if __name__ == '__main__':
     v2=BlockServer("b")
     v2.start()
     
+    """
     s=socket.socket()
-    s.connect(("127.0.0.1",4000))
+    s.connect(("219.228.127.119",1234))
     s.send("hello world")
     time.sleep(1)
+    """
     text = s.recv(1000)
     print text
     print v.thread_table
     s.send("new msg")
     v.wait(5)
+    """
+    
+    
