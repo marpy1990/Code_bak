@@ -1,0 +1,225 @@
+.app-header {
+	height: 50px;
+	background: #074E7C;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #F7F7F7;
+	padding: 15 30 15 30;
+	text-shadow: 1px 1px 0px #000;
+}
+
+
+
+.label {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 11.844px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #999999;
+}
+
+.label-info {
+	background-color: #3a87ad;
+}
+
+.page-header {
+	font-size: x-large;
+	padding: 20 10 20 20;
+	border-bottom: 1px solid #eeeeee;
+	background-color: #e0e0e0;
+	text-shadow: 1px 1px 0px white;
+}
+
+.function-container {
+	width: 100%;
+	padding: 15 10 15 20;
+	border-bottom: 1px dashed #eeeeee;
+}
+
+.function-container:hover {
+	cursor: hand;
+	cursor: pointer;
+	background-color: #ffffe0;
+}
+
+.function-enter {
+	float: right;
+	margin-right: 20px;
+	color: #074E7C;
+}
+
+.function-header {
+	font-size: 18px;
+	padding: 5 0 5 0;
+}
+
+.function-description {
+	color: #707070;
+	font-size: 14px;
+}
+
+.add,.et-add,.sub-add {
+	background-image: url(images/icons/add.png)
+		!important;
+}
+
+.edit, .et-edit, .sub-edit {
+	background-image: url(images/icons/edit.png)
+		!important;
+}
+
+.delete, .et-delete, .sub-delete {
+	background-image: url(images/icons/delete.png)
+		!important;
+}
+
+.event-viewer {
+	background-image: url(images/icons/application_view_columns.png)
+		!important;
+}
+
+.sub-man {
+	background-image: url(images/icons/sub_man.png) !important;
+}
+
+.folder {
+	background-image: url(images/icons/folder.png) !important;
+}
+
+.et-man {
+	background-image: url(images/icons/et_man.png) !important;
+}
+
+.overview {
+	background-image: url(images/icons/book.png) !important;
+}
+
+.group {
+	background-image: url(images/icons/group.png) !important;
+}
+
+.start {
+	height: 16px;
+	width: 16px;
+	background-image: url(images/icons/start.png) !important;
+}
+
+.stop {
+	height: 16px;
+	width: 16px;
+	background-image: url(images/icons/stop.png) !important;
+}
+
+.groupsensor {
+	background-image: url(images/icons/group_gear.png) !important;
+}
+
+.machine {
+	background-image: url(images/icons/computer.png) !important;
+}
+
+.network {
+	background-image: url(images/icons/world.png) !important;
+}
+
+.probe {
+	background-image: url(images/icons/cog.png) !important;
+}
+
+.system {
+	background-image: url(images/icons/system.png) !important;
+}
+
+.pubsub {
+	background-image: url(images/icons/pubsub.png) !important;
+}
+
+.cep {
+	background-image: url(images/icons/clock.png) !important;
+}
+
+.cep-add {
+	background-image: url(images/icons/clock_add.png) !important;
+}
+
+.cep-edit {
+	background-image: url(images/icons/clock_edit.png) !important;
+}
+
+.cep-delete {
+	background-image: url(images/icons/clock_delete.png) !important;
+}
+
+.cep-start {
+	background-image: url(images/icons/clock_play.png) !important;
+}
+
+.cep-stop {
+	background-image: url(images/icons/clock_stop.png) !important;
+}
+
+.probe-add {
+	background-image: url(images/icons/cog_add.png) !important;
+}
+
+.probe-edit {
+	background-image: url(images/icons/cog_edit.png) !important;
+}
+
+.probe-delete {
+	background-image: url(images/icons/cog_delete.png) !important;
+}
+
+.probe-start {
+	background-image: url(images/icons/cog_play.png) !important;
+}
+
+.probe-stop {
+	background-image: url(images/icons/cog_stop.png) !important;
+}
+
+.sysconf {
+	background-image: url(images/icons/wrench.png) !important;
+}
+
+
+.key {
+	color: #777
+}
+
+.detail-attribute,.detail-value {
+	font-size: 12px;
+	float: left;
+}
+
+.detail-attribute {
+	font-family: 'Courier New';
+	width: auto;
+	padding: 0 8 0 0;
+}
+
+.x-tab-bar-body {
+	height: 30px !important;
+}
+
+.x-tab-bar-top .x-tab-bar-strip {
+	top: 27px !important;
+}
+
+.detail-value {
+	font-family: Arial;
+	width: auto;
+}
+
+.description {
+	font-size: 14px;
+	float: right;
+}

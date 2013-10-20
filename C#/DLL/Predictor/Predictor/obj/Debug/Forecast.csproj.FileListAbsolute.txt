@@ -1,0 +1,4 @@
+D:\Code\Visual Studio 2012\DLL\Predictor\Predictor\bin\Debug\Predictor.dll
+D:\Code\Visual Studio 2012\DLL\Predictor\Predictor\bin\Debug\Predictor.pdb
+D:\Code\Visual Studio 2012\DLL\Predictor\Predictor\obj\Debug\Predictor.dll
+D:\Code\Visual Studio 2012\DLL\Predictor\Predictor\obj\Debug\Predictor.pdb

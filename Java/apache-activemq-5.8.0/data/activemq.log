@@ -1,0 +1,198 @@
+2013-10-08 08:37:05,111 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@65919c1f: startup date [Tue Oct 08 08:37:05 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-08 08:37:06,672 | INFO  | PListStore:[C:\Users\sdf\Desktop\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-08 08:37:06,764 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\sdf\Desktop\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,153 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-26753-1381192626987-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,183 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 08:37:07,185 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 08:37:07,190 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 08:37:07,191 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 08:37:07,193 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-26753-1381192626987-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,194 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,195 | WARN  | Store limit is 102400 mb, whilst the data directory: C:\Users\sdf\Desktop\apache-activemq-5.8.0\bin\..\data\kahadb only has 40609 mb of usable space | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,196 | ERROR | Temporary Store limit is 51200 mb, whilst the temporary data directory: C:\Users\sdf\Desktop\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage only has 40609 mb of usable space | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:37:07,836 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 08:37:08,046 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 08:37:08,131 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-08 08:37:08,574 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-08 08:44:58,776 | WARN  | Failed to add Connection ID:sdf-PC-26767-1381193098655-1:1, reason: javax.jms.InvalidClientIDException: Broker: localhost - Client: server already connected from tcp://127.0.0.1:26764 | org.apache.activemq.broker.TransportConnection | ActiveMQ Transport: tcp:///127.0.0.1:26768@60000
+2013-10-08 08:48:56,391 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Tue Oct 08 08:48:56 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-08 08:48:57,236 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-08 08:48:57,260 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:48:57,581 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 08:48:57,635 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 08:48:57,642 | INFO  | Recovery replayed 3 operations from the journal in 0.037 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 08:48:57,803 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-26831-1381193337664-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:48:57,865 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 08:48:57,866 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 08:48:57,872 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 08:48:57,873 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 08:48:57,875 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-26831-1381193337664-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:48:57,875 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-08 08:48:58,315 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 08:48:58,438 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 08:48:58,494 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-08 08:48:58,693 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-08 13:54:37,127 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Tue Oct 08 13:54:37 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-08 13:54:38,189 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-08 13:54:38,218 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-08 13:54:39,089 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 13:54:39,138 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 13:54:39,143 | INFO  | Recovery replayed 3 operations from the journal in 0.033 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-08 13:54:39,310 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-27966-1381211679167-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-08 13:54:39,396 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 13:54:39,397 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 13:54:39,403 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-08 13:54:39,404 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-08 13:54:39,406 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-27966-1381211679167-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-08 13:54:39,407 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-08 13:54:40,033 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 13:54:40,205 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-08 13:54:40,313 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-08 13:54:40,633 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-09 11:21:36,594 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Wed Oct 09 11:21:36 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-09 11:21:37,795 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-09 11:21:37,834 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:21:38,755 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:21:38,814 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:21:38,818 | INFO  | Recovery replayed 4 operations from the journal in 0.042 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:21:38,992 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39387-1381288898841-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:21:39,081 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:21:39,082 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:21:39,087 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:21:39,088 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:21:39,090 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39387-1381288898841-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:21:39,090 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:21:39,767 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:21:39,928 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:21:40,043 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-09 11:21:40,416 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-09 11:22:43,767 | WARN  | Transport Connection to: tcp://127.0.0.1:39393 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39393@60000
+2013-10-09 11:23:52,983 | WARN  | Transport Connection to: tcp://127.0.0.1:39400 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39400@60000
+2013-10-09 11:27:56,665 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Wed Oct 09 11:27:56 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-09 11:27:57,506 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-09 11:27:57,529 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:27:57,859 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:27:57,898 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:27:57,907 | INFO  | Recovery replayed 5 operations from the journal in 0.026 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:27:58,077 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39497-1381289277938-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:27:58,139 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:27:58,140 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:27:58,145 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:27:58,145 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:27:58,147 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39497-1381289277938-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:27:58,147 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:27:58,594 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:27:58,723 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:27:58,832 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-09 11:27:59,050 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-09 11:31:58,331 | WARN  | Transport Connection to: tcp://0:0:0:0:0:0:0:1:39509 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:39509@60000
+2013-10-09 11:35:02,393 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Wed Oct 09 11:35:02 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-09 11:35:03,276 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-09 11:35:03,300 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:35:03,626 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:35:03,666 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:35:03,674 | INFO  | Recovery replayed 6 operations from the journal in 0.025 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 11:35:03,853 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39525-1381289703704-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:35:03,916 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:35:03,916 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:35:03,922 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 11:35:03,922 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 11:35:03,923 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-39525-1381289703704-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:35:03,924 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-09 11:35:04,373 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:35:04,496 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 11:35:04,567 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-09 11:35:04,789 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-09 11:36:28,635 | WARN  | Transport Connection to: tcp://127.0.0.1:39529 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39529@60000
+2013-10-09 11:38:49,726 | WARN  | Transport Connection to: tcp://127.0.0.1:39582 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39582@60000
+2013-10-09 11:39:13,127 | WARN  | Transport Connection to: tcp://127.0.0.1:39588 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39588@60000
+2013-10-09 11:39:42,206 | WARN  | Transport Connection to: tcp://127.0.0.1:39592 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:39592@60000
+2013-10-09 12:13:02,799 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Wed Oct 09 12:13:02 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-09 12:13:03,807 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-09 12:13:03,834 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-09 12:13:04,163 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 12:13:04,186 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 12:13:04,190 | INFO  | Recovery replayed 7 operations from the journal in 0.015 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-09 12:13:04,345 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-40447-1381291984214-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-09 12:13:04,418 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 12:13:04,419 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 12:13:04,427 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-09 12:13:04,428 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-09 12:13:04,429 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-40447-1381291984214-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-09 12:13:04,429 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-09 12:13:04,972 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 12:13:05,119 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-09 12:13:05,195 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-09 12:13:05,489 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-10 12:06:17,606 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Thu Oct 10 12:06:17 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-10 12:06:18,530 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-10 12:06:18,563 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:06:19,474 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:06:19,506 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:06:19,510 | INFO  | Recovery replayed 8 operations from the journal in 0.015 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:06:19,676 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-42407-1381377979531-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:06:19,756 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 12:06:19,756 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 12:06:19,762 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 12:06:19,762 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 12:06:19,763 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-42407-1381377979531-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:06:19,764 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:06:20,304 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 12:06:20,442 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 12:06:20,518 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-10 12:06:20,801 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-10 12:06:41,543 | WARN  | Transport Connection to: tcp://0:0:0:0:0:0:0:1:42410 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:42410@60000
+2013-10-10 12:47:56,470 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Thu Oct 10 12:47:56 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-10 12:47:57,329 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-10 12:47:57,355 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:47:57,680 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:47:57,699 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:47:57,703 | INFO  | Recovery replayed 9 operations from the journal in 0.012 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 12:47:57,869 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-43536-1381380477726-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:47:57,937 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 12:47:57,938 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 12:47:57,946 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 12:47:57,947 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 12:47:57,949 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-43536-1381380477726-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:47:57,950 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-10 12:47:58,382 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 12:47:58,514 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 12:47:58,578 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-10 12:47:58,799 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-10 21:50:34,015 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e973f09: startup date [Thu Oct 10 21:50:34 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-10 21:50:34,978 | INFO  | PListStore:[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-10 21:50:35,002 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-10 21:50:35,308 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 21:50:35,328 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 21:50:35,332 | INFO  | Recovery replayed 10 operations from the journal in 0.013 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-10 21:50:35,503 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-8756-1381413035351-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-10 21:50:35,597 | INFO  | Listening for connections at: tcp://sdf-PC:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 21:50:35,598 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 21:50:35,603 | INFO  | Listening for connections at: amqp://sdf-PC:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-10 21:50:35,604 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-10 21:50:35,605 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:sdf-PC-8756-1381413035351-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-10 21:50:35,605 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-10 21:50:36,075 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 21:50:36,198 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-10 21:50:36,270 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-10 21:50:36,665 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-17 20:02:37,655 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1a2fa45: startup date [Thu Oct 17 20:02:37 CST 2013]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2013-10-17 20:02:40,285 | INFO  | PListStore:[C:\Users\Administrator\Desktop\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2013-10-17 20:02:40,367 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Administrator\Desktop\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:42,061 | INFO  | KahaDB is version 4 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-17 20:02:42,140 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-17 20:02:42,149 | INFO  | Recovery replayed 11 operations from the journal in 0.065 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2013-10-17 20:02:42,411 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:MICROSO-BEK50CG-10959-1382011362192-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:42,592 | INFO  | Listening for connections at: tcp://MICROSO-BEK50CG:60000?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-17 20:02:42,594 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-17 20:02:42,625 | INFO  | Listening for connections at: amqp://MICROSO-BEK50CG:5672?maximumConnections=1000&wireformat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2013-10-17 20:02:42,626 | INFO  | Connector amqp Started | org.apache.activemq.broker.TransportConnector | main
+2013-10-17 20:02:42,661 | INFO  | Apache ActiveMQ 5.8.0 (localhost, ID:MICROSO-BEK50CG-10959-1382011362192-0:1) started | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:42,661 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:42,664 | WARN  | Store limit is 102400 mb, whilst the data directory: C:\Users\Administrator\Desktop\Code\Java\apache-activemq-5.8.0\bin\..\data\kahadb only has 21702 mb of usable space | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:42,667 | ERROR | Temporary Store limit is 51200 mb, whilst the temporary data directory: C:\Users\Administrator\Desktop\Code\Java\apache-activemq-5.8.0\bin\..\data\localhost\tmp_storage only has 21702 mb of usable space | org.apache.activemq.broker.BrokerService | main
+2013-10-17 20:02:43,931 | INFO  | Web console type: embedded | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-17 20:02:44,347 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2013-10-17 20:02:44,690 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2013-10-17 20:02:45,697 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2013-10-17 20:06:32,852 | WARN  | Transport Connection to: tcp://127.0.0.1:10977 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:10977@60000

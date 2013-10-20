@@ -1,0 +1,1059 @@
+  Microsoft.SqlServer.Management.Common.StringConnectionInfo.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.SqlServer.SqlClrProvider, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Microsoft.SqlServer.Management.Common.ConnectionSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.SqlConnectionInfo): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 NoConnectionTimeout = 0 : Public, Static, Literal, HasDefault
+  Properties:
+    System.String ServerInstance 'get set' : 
+    Boolean IsLoginInitialized 'get ' : 
+    System.String Login 'get set' : 
+    Boolean IsPasswordInitialized 'get ' : 
+    System.String Password 'get set' : 
+    System.Security.SecureString SecurePassword 'get set' : 
+    Boolean LoginSecure 'get set' : 
+    System.String ConnectAsUserName 'get set' : 
+    System.String ConnectAsUserPassword 'get set' : 
+    Boolean ConnectAsUser 'get set' : 
+    Boolean NonPooledConnection 'get set' : 
+    Int32 PooledConnectionLifetime 'get set' : 
+    Int32 MinPoolSize 'get set' : 
+    Int32 MaxPoolSize 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    System.String ConnectionString 'get set' : 
+    System.Security.SecureString SecureConnectionString 'get set' : 
+    Microsoft.SqlServer.Management.Common.NetworkProtocol NetworkProtocol 'get set' : 
+    Boolean IsApplicationNameInitialized 'get ' : 
+    System.String ApplicationName 'get set' : 
+    Boolean IsWorkstationIdInitialized 'get ' : 
+    System.String WorkstationId 'get set' : 
+    Boolean IsDatabaseNameInitialized 'get ' : 
+    System.String DatabaseName 'get set' : 
+    Int32 PacketSize 'get set' : 
+    Boolean MultipleActiveResultSets 'get set' : 
+    Boolean EncryptConnection 'get set' : 
+    System.String AdditionalParameters 'get ' : 
+    Boolean IsReadAccessBlocked 'get ' : 
+    System.String InitialCatalog 'get ' : 
+    Boolean BlockUpdates 'get set' : 
+  Methods:
+    CopyConnectionSettings(ConnectionSettings): PrivateScope, Assembly, HideBySig
+    InitFromSqlConnectionInfo(SqlConnectionInfo): PrivateScope, Assembly, HideBySig
+    InitFromSqlConnection(SqlConnection): PrivateScope, Assembly, HideBySig
+    InitFromConnectionString(String): PrivateScope, Assembly, HideBySig
+    get_ServerInstance(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ServerInstance(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsLoginInitialized(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Login(): PrivateScope, Public, HideBySig, SpecialName
+    set_Login(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsPasswordInitialized(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SecurePassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_SecurePassword(SecureString): PrivateScope, Public, HideBySig, SpecialName
+    ForceSetPassword(String): PrivateScope, Assembly, HideBySig
+    get_LoginSecure(): PrivateScope, Public, HideBySig, SpecialName
+    set_LoginSecure(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectAsUserName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectAsUserName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectAsUserPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectAsUserPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectAsUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectAsUser(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NonPooledConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_NonPooledConnection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PooledConnectionLifetime(): PrivateScope, Public, HideBySig, SpecialName
+    set_PooledConnectionLifetime(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MinPoolSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinPoolSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxPoolSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxPoolSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SecureConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_SecureConnectionString(SecureString): PrivateScope, Public, HideBySig, SpecialName
+    get_NetworkProtocol(): PrivateScope, Public, HideBySig, SpecialName
+    set_NetworkProtocol(NetworkProtocol): PrivateScope, Public, HideBySig, SpecialName
+    get_IsApplicationNameInitialized(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ApplicationName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ApplicationName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsWorkstationIdInitialized(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_WorkstationId(): PrivateScope, Public, HideBySig, SpecialName
+    set_WorkstationId(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsDatabaseNameInitialized(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DatabaseName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DatabaseName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_PacketSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MultipleActiveResultSets(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultipleActiveResultSets(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EncryptConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_EncryptConnection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalParameters(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_IsReadAccessBlocked(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_InitialCatalog(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_BlockUpdates(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_BlockUpdates(Boolean): PrivateScope, Assembly, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.SqlServer.Management.Common.ConnectionManager: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionSettings
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlClient.SqlConnection): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.SqlConnectionInfo): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean InUse 'get set' : 
+    Int32 LockTimeout 'get set' : 
+    Microsoft.SqlServer.Management.Common.ServerVersion ServerVersion 'get set' : 
+    Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType 'get ' : 
+    Boolean IsContainedAuthentication 'get ' : 
+    System.Data.SqlClient.SqlConnection SqlConnectionObject 'get ' : 
+    System.String CurrentDatabase 'get ' : 
+    Boolean BlockPoolDisconnect 'get ' : 
+    Boolean IsOpen 'get ' : 
+    Microsoft.SqlServer.Management.Common.CapturedSql CapturedSql 'get ' : 
+    Microsoft.SqlServer.Management.Common.AutoDisconnectMode AutoDisconnectMode 'get set' : 
+    Boolean IsForceDisconnected 'get ' : 
+  Events:
+    System.Data.StateChangeEventHandler StateChange: 
+    System.Data.SqlClient.SqlInfoMessageEventHandler InfoMessage: 
+    Microsoft.SqlServer.Management.Common.ServerMessageEventHandler ServerMessageInternal: 
+    Microsoft.SqlServer.Management.Common.ServerMessageEventHandler ServerMessage: 
+    Microsoft.SqlServer.Management.Common.StatementEventHandler StatementExecuted: 
+    Microsoft.SqlServer.Management.Common.ServerMessageEventHandler RemoteLoginFailedInternal: 
+    Microsoft.SqlServer.Management.Common.ServerMessageEventHandler RemoteLoginFailed: 
+  Methods:
+    CopyConnectionManager(ConnectionManager): PrivateScope, Assembly, HideBySig
+    get_InUse(): PrivateScope, Public, HideBySig, SpecialName
+    set_InUse(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_LockTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_LockTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ServerVersion(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerVersion(ServerVersion): PrivateScope, Public, HideBySig, SpecialName
+    get_DatabaseEngineType(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsContainedAuthentication(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_SqlConnectionObject(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentDatabase(): PrivateScope, Assembly, HideBySig, SpecialName
+    Connect(): PrivateScope, Public, HideBySig
+    Disconnect(): PrivateScope, Public, HideBySig
+    PoolConnect(): PrivateScope, Assembly, HideBySig
+    PoolDisconnect(): PrivateScope, Assembly, HideBySig
+    get_BlockPoolDisconnect(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, Abstract, SpecialName
+    InitAfterConnect(): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride, Abstract
+    get_IsOpen(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GenerateStatementExecutedEvent(String): PrivateScope, Assembly, HideBySig
+    add_StateChange(StateChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_StateChange(StateChangeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_InfoMessage(SqlInfoMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_InfoMessage(SqlInfoMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ServerMessage(ServerMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ServerMessage(ServerMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_StatementExecuted(StatementEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_StatementExecuted(StatementEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RemoteLoginFailed(ServerMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RemoteLoginFailed(ServerMessageEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_CapturedSql(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoDisconnectMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoDisconnectMode(AutoDisconnectMode): PrivateScope, Public, HideBySig, SpecialName
+    ForceDisconnected(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsForceDisconnected(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Microsoft.SqlServer.Management.Common.ServerInformation: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Microsoft.SqlServer.Management.Common.ServerVersion, Microsoft.SqlServer.Management.Common.DatabaseEngineType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.SqlServer.Management.Common.ServerVersion ServerVersion 'get ' : 
+    Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType 'get ' : 
+  Methods:
+    get_ServerVersion(): PrivateScope, Public, HideBySig, SpecialName
+    get_DatabaseEngineType(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.CapturedSql: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Specialized.StringCollection Text 'get ' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    Add(String): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+Class Microsoft.SqlServer.Management.Common.ServerComparer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Microsoft.SqlServer.Management.Common.ServerConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.ServerConnection, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IComparer`1[System.String]
+  Properties:
+    System.Globalization.CultureInfo CultureInfo 'get ' : 
+    System.Globalization.CompareOptions CompareOptions 'get ' : 
+  Methods:
+    get_CultureInfo(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_CompareOptions(): PrivateScope, Assembly, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.DatabaseNameEqualityComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(Microsoft.SqlServer.Management.Common.ServerComparer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[System.String]
+Class Microsoft.SqlServer.Management.Common.CacheItem`1[K]: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Type parameter: K,  ReferenceType
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    K Key      'get ' : 
+    System.Object Result 'get set' : 
+    Int32 ExecutionCount 'get set' : 
+  Methods:
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    set_Result(Object): PrivateScope, Public, HideBySig, SpecialName
+    HasResult(): PrivateScope, Public, HideBySig
+    ClearResult(): PrivateScope, Public, HideBySig
+    get_ExecutionCount(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExecutionCount(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.SqlBatch: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.CacheItem`1[System.String]
+    Void .ctor(System.Data.SqlClient.SqlCommand): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.SqlClient.SqlCommand Command : Public
+  Properties:
+    System.String Key 'get ' : 
+  Methods:
+    get_Key(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct Microsoft.SqlServer.Management.Common.QueryParameterizationMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.QueryParameterizationMode None = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.QueryParameterizationMode ForcedParameterization = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.QueryParameterizationMode ParameterizeLiterals = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.DeferredUseMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.DeferredUseMode None = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DeferredUseMode CollapseRedundant = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DeferredUseMode MergeSql = 2 : Public, Static, Literal, HasDefault
+Interface Microsoft.SqlServer.Management.Common.ISfcConnection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean IsOpen 'get ' : 
+    System.String ServerInstance 'get set' : 
+    System.Version ServerVersion 'get ' : 
+    Boolean IsForceDisconnected 'get ' : 
+  Methods:
+    Connect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Disconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Copy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsOpen(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ServerInstance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ServerInstance(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ServerVersion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ToEnumeratorObject(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ForceDisconnected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsForceDisconnected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Microsoft.SqlServer.Management.Common.ServerConnection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionManager
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.SqlConnectionInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlClient.SqlConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Security.SecureString): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.SqlServer.Management.Common.ISfcConnection
+  Fields:
+    System.String Database_Default = master : Assembly, Static, Literal, HasDefault
+  Properties:
+    Microsoft.SqlServer.Management.Common.QueryParameterizationMode ParameterizationMode 'get set' : 
+    Microsoft.SqlServer.Management.Common.DeferredUseMode UseMode 'get set' : 
+    Boolean CachedQueries 'get set' : 
+    Int32 StatementTimeout 'get set' : 
+    Microsoft.SqlServer.Management.Common.ServerType ConnectionType 'get ' : 
+    System.String BatchSeparator 'get set' : 
+    Int32 TransactionDepth 'get ' : 
+    Microsoft.SqlServer.Management.Common.SqlExecutionModes SqlExecutionModes 'get set' : 
+    Microsoft.SqlServer.Management.Common.FixedServerRoles FixedServerRoles 'get ' : 
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles UserProfile 'get ' : 
+    Int32 ProcessID 'get ' : 
+    System.String TrueLogin 'get ' : 
+    System.String TrueName 'get set' : 
+    Boolean BlockPoolDisconnect 'get ' : 
+  Methods:
+    get_ParameterizationMode(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ParameterizationMode(QueryParameterizationMode): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_UseMode(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_UseMode(DeferredUseMode): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CachedQueries(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    set_CachedQueries(Boolean): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    NormalizeQuery(String, Boolean): PrivateScope, Public, Static, HideBySig
+    NormalizeQuery(String): PrivateScope, Public, Static, HideBySig
+    get_StatementTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_StatementTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionType(): PrivateScope, Public, HideBySig, SpecialName
+    ChangePassword(SecureString): PrivateScope, Public, HideBySig
+    ChangePassword(String): PrivateScope, Public, HideBySig
+    ExecuteNonQuery(StringCollection): PrivateScope, Public, HideBySig
+    ExecuteNonQuery(StringCollection, ExecutionTypes): PrivateScope, Public, HideBySig
+    ExecuteNonQuery(String): PrivateScope, Public, HideBySig
+    ExecuteNonQuery(String, ExecutionTypes): PrivateScope, Public, HideBySig
+    get_BatchSeparator(): PrivateScope, Public, HideBySig, SpecialName
+    set_BatchSeparator(String): PrivateScope, Public, HideBySig, SpecialName
+    ExecuteWithResults(StringCollection): PrivateScope, Public, HideBySig
+    ExecuteWithResults(String): PrivateScope, Public, HideBySig
+    ExecuteReader(String): PrivateScope, Public, HideBySig
+    ExecuteReader(String, SqlCommand&(Out)): PrivateScope, Public, HideBySig
+    ExecuteReader(SqlCommand): PrivateScope, Assembly, HideBySig
+    ExecuteScalar(StringCollection): PrivateScope, Public, HideBySig
+    ExecuteScalar(String): PrivateScope, Public, HideBySig
+    BeginTransaction(): PrivateScope, Public, HideBySig
+    CommitTransaction(): PrivateScope, Public, HideBySig
+    RollBackTransaction(): PrivateScope, Public, HideBySig
+    get_TransactionDepth(): PrivateScope, Public, HideBySig, SpecialName
+    get_SqlExecutionModes(): PrivateScope, Public, HideBySig, SpecialName
+    set_SqlExecutionModes(SqlExecutionModes): PrivateScope, Public, HideBySig, SpecialName
+    get_FixedServerRoles(): PrivateScope, Public, HideBySig, SpecialName
+    IsInFixedServerRole(FixedServerRoles): PrivateScope, Public, HideBySig
+    get_UserProfile(): PrivateScope, Public, HideBySig, SpecialName
+    get_ProcessID(): PrivateScope, Public, HideBySig, SpecialName
+    get_TrueLogin(): PrivateScope, Public, HideBySig, SpecialName
+    get_TrueName(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrueName(String): PrivateScope, Public, HideBySig, SpecialName
+    Cancel(): PrivateScope, Public, HideBySig
+    InitAfterConnect(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride
+    get_BlockPoolDisconnect(): PrivateScope, Assembly, Virtual, HideBySig, CheckAccessOnOverride, SpecialName
+    CheckDisconnected(): PrivateScope, Assembly, HideBySig
+    GetDatabaseConnection(String): PrivateScope, Assembly, HideBySig
+Class Microsoft.SqlServer.Management.Common.ServerConnection+ConnectionFactory: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+  Properties:
+    Microsoft.SqlServer.Management.Common.ServerComparer ServerComparer 'get ' : 
+  Methods:
+    get_ServerComparer(): PrivateScope, Public, HideBySig, SpecialName
+    GetInstance(ServerConnection): PrivateScope, Public, Static, HideBySig
+    GetDatabaseConnection(String): PrivateScope, Public, HideBySig
+Class Microsoft.SqlServer.Management.Common.StatementEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, StatementEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, StatementEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.SqlServer.Management.Common.StatementEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String, System.DateTime): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String SqlStatement 'get ' : 
+    System.DateTime TimeStamp 'get ' : 
+  Methods:
+    get_SqlStatement(): PrivateScope, Public, HideBySig, SpecialName
+    get_TimeStamp(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ServerMessageEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ServerMessageEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.SqlServer.Management.Common.ServerMessageEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Data.SqlClient.SqlError): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Data.SqlClient.SqlError Error 'get ' : 
+  Methods:
+    get_Error(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct Microsoft.SqlServer.Management.Common.NetworkProtocol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.NetworkProtocol TcpIp = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol NamedPipes = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol Multiprotocol = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol AppleTalk = 3 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol BanyanVines = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol Via = 5 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol SharedMemory = 6 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol NWLinkIpxSpx = 7 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.NetworkProtocol NotSpecified = 8 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.DatabaseEngineType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.DatabaseEngineType Unknown = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DatabaseEngineType Standalone = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DatabaseEngineType SqlAzureDatabase = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.ExecutionTypes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.ExecutionTypes Default = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ExecutionTypes NoCommands = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ExecutionTypes ContinueOnError = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ExecutionTypes NoExec = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ExecutionTypes ParseOnly = 8 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ExecutionTypes QuotedIdentifierOn = 16 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.SqlExecutionModes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.SqlExecutionModes ExecuteSql = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.SqlExecutionModes CaptureSql = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.SqlExecutionModes ExecuteAndCaptureSql = 3 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.FixedServerRoles: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.FixedServerRoles None = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles SysAdmin = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles ServerAdmin = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles SetupAdmin = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles SecurityAdmin = 8 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles ProcessAdmin = 16 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles DBCreator = 32 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles DiskAdmin = 64 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.FixedServerRoles BulkAdmin = 128 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.ServerUserProfiles: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles None = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles SALogin = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles CreateDatabase = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles CreateXP = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerUserProfiles All = 7 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.AutoDisconnectMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.AutoDisconnectMode DisconnectIfPooled = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.AutoDisconnectMode NoAutoDisconnect = 1 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.ServerType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.ServerType DatabaseEngine = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerType AnalysisServices = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerType ReportingServices = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerType IntegrationServices = 3 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerType SqlServerEverywhere = 4 : Public, Static, Literal, HasDefault (Obsolete)
+    Microsoft.SqlServer.Management.Common.ServerType SqlServerCompactEdition = 4 : Public, Static, Literal, HasDefault
+Class Microsoft.SqlServer.Management.Common.ConnectionException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.SystemException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.ConnectionCannotBeChangedException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.InvalidPropertyValueException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.ConnectionFailureException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.ExecutionFailureException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.NotInTransactionException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.InvalidArgumentException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.PropertyNotSetException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.PropertyNotAvailableException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.ChangePasswordFailureException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.DisconnectedConnectionException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.ServerVersion: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Major 'get ' : 
+    Int32 Minor 'get ' : 
+    Int32 BuildNumber 'get ' : 
+  Methods:
+    get_Major(): PrivateScope, Public, HideBySig, SpecialName
+    get_Minor(): PrivateScope, Public, HideBySig, SpecialName
+    get_BuildNumber(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    op_Explicit(ServerVersion): PrivateScope, Public, Static, HideBySig, SpecialName
+Interface Microsoft.SqlServer.Management.Common.ITransferMetadataProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    SaveMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IDataTransferProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    Microsoft.SqlServer.Management.Common.DataTransferEventHandler TransferEvent: 
+  Methods:
+    Configure(ITransferMetadataProvider): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExecuteTransfer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_TransferEvent(DataTransferEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_TransferEvent(DataTransferEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Microsoft.SqlServer.Management.Common.SqlServerManagementException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ProductName 'get ' : 
+  Methods:
+    get_ProductName(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.TransferException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlServerManagementException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Microsoft.SqlServer.Management.Common.DataTransferEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DataTransferEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DataTransferEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.SqlServer.Management.Common.DataTransferEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Microsoft.SqlServer.Management.Common.DataTransferEventType, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.SqlServer.Management.Common.DataTransferEventType DataTransferEventType 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_DataTransferEventType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.SqlServer.Management.Common.DataTransferEventType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.DataTransferEventType Progress = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferEventType Information = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferEventType Warning = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.SqlServer.Management.Common.DataTransferProgressEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DataTransferProgressEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DataTransferProgressEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.SqlServer.Management.Common.DataTransferProgressEventType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType ExecuteNonTransactableSql = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType StartTransaction = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType AllowedToFailPrologueSql = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType ExecutePrologueSql = 3 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType GenerateDataFlow = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType ExecutingDataFlow = 5 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType TransferringRows = 6 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType ExecuteEpilogueSql = 7 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType CommitTransaction = 8 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType RollbackTransaction = 9 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType ExecuteCompensatingSql = 10 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType CancelQuery = 11 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType Error = 12 : Public, Static, Literal, HasDefault
+Class Microsoft.SqlServer.Management.Common.DataTransferProgressEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Microsoft.SqlServer.Management.Common.DataTransferProgressEventType, System.String, Int64, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.SqlServer.Management.Common.DataTransferProgressEventType DataTransferProgressEventType 'get ' : 
+    System.String TransferId 'get ' : 
+    Int64 ProgressCount 'get ' : 
+    System.Exception Exception 'get ' : 
+  Methods:
+    get_DataTransferProgressEventType(): PrivateScope, Public, HideBySig, SpecialName
+    get_TransferId(): PrivateScope, Public, HideBySig, SpecialName
+    get_ProgressCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.SqlServer.Management.Common.ServerCaseSensitivity: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.ServerCaseSensitivity Unknown = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerCaseSensitivity CaseSensitive = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ServerCaseSensitivity CaseInsensitive = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.SqlServer.Management.Common.ConnectionType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.SqlServer.Management.Common.ConnectionType Sql = 0 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType Olap = 1 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType SqlConnection = 2 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType WmiManagementScope = 3 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType SqlCE = 4 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType ReportServer = 5 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType IntegrationServer = 6 : Public, Static, Literal, HasDefault
+    Microsoft.SqlServer.Management.Common.ConnectionType AzureStorage = 7 : Public, Static, Literal, HasDefault
+Class Microsoft.SqlServer.Management.Common.ConnectionInfoBase: AutoLayout, AnsiClass, Class, Public, Abstract, Serializable, BeforeFieldInit
+  Properties:
+    Microsoft.SqlServer.Management.Common.ConnectionType ServerType 'get ' : 
+    Microsoft.SqlServer.Management.Common.ServerVersion ServerVersion 'get set' : 
+    Microsoft.SqlServer.Management.Common.ServerCaseSensitivity ServerCaseSensitivity 'get set' : 
+    System.Globalization.CultureInfo DefaultCulture 'get ' : 
+  Methods:
+    get_ServerType(): PrivateScope, Public, HideBySig, SpecialName
+    get_ServerVersion(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerVersion(ServerVersion): PrivateScope, Public, HideBySig, SpecialName
+    get_ServerCaseSensitivity(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerCaseSensitivity(ServerCaseSensitivity): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    get_DefaultCulture(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.SqlOlapConnectionInfoBase: AutoLayout, AnsiClass, Class, Public, Abstract, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionInfoBase
+    Void .ctor(System.String, System.String, System.String, Microsoft.SqlServer.Management.Common.ConnectionType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 DefaultConnTimeout : Public, Static, InitOnly
+    Int32 DefaultQueryTimeout : Public, Static, InitOnly
+  Properties:
+    System.Text.StringBuilder UserNameInternal 'get set' : 
+    System.Security.SecureString PasswordInternal 'get set' : 
+    System.String ServerName 'get set' : 
+    System.String UserName 'get set' : 
+    System.String Password 'get set' : 
+    System.Security.SecureString SecurePassword 'get set' : 
+    Boolean UseIntegratedSecurity 'get set' : 
+    System.String DatabaseName 'get set' : 
+    Int32 ConnectionTimeout 'get set' : 
+    Int32 QueryTimeout 'get set' : 
+    System.String ConnectionString 'get ' : 
+  Methods:
+    get_UserNameInternal(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_UserNameInternal(StringBuilder): PrivateScope, Assembly, HideBySig, SpecialName
+    get_PasswordInternal(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_PasswordInternal(SecureString): PrivateScope, Assembly, HideBySig, SpecialName
+    get_ServerName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SecurePassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_SecurePassword(SecureString): PrivateScope, Public, HideBySig, SpecialName
+    get_UseIntegratedSecurity(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseIntegratedSecurity(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DatabaseName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DatabaseName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_QueryTimeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_QueryTimeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateConnectionObject(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.SqlServer.Management.Common.OlapConnectionInfo: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlOlapConnectionInfoBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.OlapConnectionInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean EncryptConnection 'get set' : 
+    System.String ApplicationName 'get set' : 
+    System.String ConnectionString 'get ' : 
+  Methods:
+    get_EncryptConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_EncryptConnection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ApplicationName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ApplicationName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    CreateConnectionObject(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.SqlServer.Management.Common.SqlConnectionInfo: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlOlapConnectionInfoBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.SqlConnectionInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.ServerConnection, Microsoft.SqlServer.Management.Common.ConnectionType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Microsoft.SqlServer.Management.Common.NetworkProtocol DefaultNetworkProtocol : Public, Static, InitOnly
+  Properties:
+    System.String ApplicationName 'get set' : 
+    System.String WorkstationId 'get set' : 
+    Microsoft.SqlServer.Management.Common.NetworkProtocol ConnectionProtocol 'get set' : 
+    System.String ConnectionString 'get ' : 
+    Int32 PoolConnectionLifeTime 'get set' : 
+    Int32 PacketSize 'get set' : 
+    Int32 MaxPoolSize 'get set' : 
+    Int32 MinPoolSize 'get set' : 
+    System.Data.SqlTypes.SqlBoolean Pooled 'get set' : 
+    Boolean EncryptConnection 'get set' : 
+    System.String AdditionalParameters 'get set' : 
+  Methods:
+    get_ApplicationName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ApplicationName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_WorkstationId(): PrivateScope, Public, HideBySig, SpecialName
+    set_WorkstationId(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionProtocol(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionProtocol(NetworkProtocol): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    CreateConnectionObject(): PrivateScope, Public, Virtual, HideBySig
+    get_PoolConnectionLifeTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_PoolConnectionLifeTime(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PacketSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_PacketSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxPoolSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxPoolSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MinPoolSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinPoolSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Pooled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Pooled(SqlBoolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EncryptConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_EncryptConnection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalParameters(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalParameters(String): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.SqlCeConnectionInfo: AutoLayout, AnsiClass, Class, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlOlapConnectionInfoBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.IDbConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.SqlCeConnectionInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ConnectionString 'get ' : 
+    System.Data.IDbConnection Connection 'get set' : 
+    Int32 MaxDatabaseSize 'get set' : 
+    Int32 DefaultLockEscalation 'get set' : 
+  Methods:
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Connection(): PrivateScope, Public, HideBySig, SpecialName
+    set_Connection(IDbConnection): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxDatabaseSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxDatabaseSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultLockEscalation(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultLockEscalation(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    CreateConnectionObject(): PrivateScope, Public, Virtual, HideBySig
+Class Microsoft.SqlServer.Management.Common.SqlDirectConnection: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.ConnectionInfoBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlClient.SqlConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ServerName 'get set' : 
+    System.Data.SqlClient.SqlConnection SqlConnection 'get set' : 
+  Methods:
+    get_ServerName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SqlConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_SqlConnection(SqlConnection): PrivateScope, Public, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+Interface Microsoft.SqlServer.Management.Common.IRestrictedAccess: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean SingleConnection 'get set' : 
+  Methods:
+    get_SingleConnection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SingleConnection(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Microsoft.SqlServer.Management.Common.SqlConnectionInfoWithConnection: AutoLayout, AnsiClass, Class, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlConnectionInfo
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Data.SqlClient.SqlConnection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    Microsoft.SqlServer.Management.Common.IRestrictedAccess
+  Properties:
+    Microsoft.SqlServer.Management.Common.ServerConnection ServerConnection 'get set' : 
+    Boolean SingleConnection 'get set' : 
+  Events:
+    System.EventHandler ConnectionClosed: 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_ServerConnection(): PrivateScope, Public, HideBySig, SpecialName
+    set_ServerConnection(ServerConnection): PrivateScope, Public, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    get_SingleConnection(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SingleConnection(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_ConnectionClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ConnectionClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.DatabaseEngineTypeExtension: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    IsMatrix(DatabaseEngineType): PrivateScope, Assembly, Static, HideBySig
+Class Microsoft.SqlServer.Management.Common.DtsConnectionInfo: AutoLayout, AnsiClass, Class, Serializable, BeforeFieldInit
+  :Microsoft.SqlServer.Management.Common.SqlOlapConnectionInfoBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.SqlServer.Management.Common.DtsConnectionInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ConnectionString 'get ' : 
+    System.String ApplicationName 'get set' : 
+    System.String WorkstationID 'get set' : 
+  Methods:
+    get_ConnectionString(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ApplicationName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ApplicationName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_WorkstationID(): PrivateScope, Public, HideBySig, SpecialName
+    set_WorkstationID(String): PrivateScope, Public, HideBySig, SpecialName
+    CreateConnectionObject(): PrivateScope, Public, Virtual, HideBySig
+Interface Microsoft.SqlServer.Management.Common.ICreatable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Create(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IDroppable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Drop(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IAlterable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Alter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IMarkForDrop: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    MarkForDrop(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IRenamable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Rename(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.SqlServer.Management.Common.IRefreshable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Refresh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Microsoft.SqlServer.Management.Common.SafeNativeMethods: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetLastErrorMessage(Int32): PrivateScope, Assembly, Static, HideBySig
+    GetUserToken(String, String, String, IntPtr&(Out)): PrivateScope, Assembly, Static, HideBySig
+Class Microsoft.SqlServer.Management.Common.EncryptionUtility: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    DecryptSecureString(SecureString): PrivateScope, Public, Static, HideBySig
+    EncryptString(String): PrivateScope, Public, Static, HideBySig
+Class Microsoft.SqlServer.Management.Common.CommonUtils: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    MakeSqlBraket(String): PrivateScope, Assembly, Static, HideBySig
+    MakeSqlString(String): PrivateScope, Assembly, Static, HideBySig
+    EscapeString(String, String): PrivateScope, Assembly, Static, HideBySig
+Class Microsoft.SqlServer.Management.Common.ExecutionCache`2[K,C]: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Type parameter: K,  ReferenceType
+  Type parameter: C, Microsoft.SqlServer.Management.Common.CacheItem`1[K]
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    C Item [K] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    ContainsKey(K): PrivateScope, Public, HideBySig
+    Add(C): PrivateScope, Public, HideBySig
+    get_Item(K): PrivateScope, Public, HideBySig, SpecialName
+    ClearResults(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    IsEmpty(): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.SqlServer.Management.Common.StringConnectionInfo: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Properties:
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String ConnectionCannotBeChanged 'get ' : 
+    System.String NotInTransaction 'get ' : 
+    System.String InvalidPropertyValueReasonString 'get ' : 
+    System.String ExecutionFailure 'get ' : 
+    System.String PasswordCouldNotBeChanged 'get ' : 
+    System.String InvalidArgumentCacheNullKey 'get ' : 
+    System.String CannotCloseTraceController 'get ' : 
+    System.String CannotRetrieveSchemaTable 'get ' : 
+    System.String CannotReadNextEvent 'get ' : 
+    System.String CannotGetColumnName 'get ' : 
+    System.String CannotGetColumnType 'get ' : 
+    System.String CannotGetColumnValue 'get ' : 
+    System.String CannotSetColumnValue 'get ' : 
+    System.String CannotWriteEvent 'get ' : 
+    System.String CannotCloseWriter 'get ' : 
+    System.String CannotInitializeAsReader 'get ' : 
+    System.String CannotInitializeAsWriter 'get ' : 
+    System.String CannotInitializeAsReplayOutputWriter 'get ' : 
+    System.String CannotPause 'get ' : 
+    System.String CannotStop 'get ' : 
+    System.String CannotRestart 'get ' : 
+    System.String CannotStartReplay 'get ' : 
+    System.String CannotPauseReplay 'get ' : 
+    System.String CannotStopReplay 'get ' : 
+    System.String FailedToGetSQLToolsDirPathFromInstAPI 'get ' : 
+    System.String InstAPIIsNotInstalled 'get ' : 
+    System.String CouldNotInstantiateInstAPI 'get ' : 
+    System.String CouldNotLoadMethodInfoFromInstAPI 'get ' : 
+    System.String CannotTranslateSubclass 'get ' : 
+    System.String CannotGetOrdinal 'get ' : 
+    System.String CannotLoadInAppDomain 'get ' : 
+    System.String SmoSQLCLRUnAvailable 'get ' : 
+    System.String CannotBeSetWhileConnected 'get ' : 
+    System.String CannotPerformOperationWhileDisconnected 'get ' : 
+    System.String CannotSetTrueName 'get ' : 
+    System.String TrueNameMustBeSet 'get ' : 
+  Methods:
+    get_Culture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ConnectionCannotBeChanged(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_NotInTransaction(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_InvalidPropertyValueReasonString(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ExecutionFailure(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PasswordCouldNotBeChanged(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_InvalidArgumentCacheNullKey(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotCloseTraceController(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotRetrieveSchemaTable(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotReadNextEvent(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotGetColumnName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotGetColumnType(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotGetColumnValue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotSetColumnValue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotWriteEvent(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotCloseWriter(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotInitializeAsReader(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotInitializeAsWriter(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotInitializeAsReplayOutputWriter(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotPause(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotStop(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotRestart(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotStartReplay(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotPauseReplay(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotStopReplay(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FailedToGetSQLToolsDirPathFromInstAPI(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_InstAPIIsNotInstalled(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CouldNotInstantiateInstAPI(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CouldNotLoadMethodInfoFromInstAPI(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotTranslateSubclass(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotGetOrdinal(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotLoadInAppDomain(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SmoSQLCLRUnAvailable(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotBeSetWhileConnected(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotPerformOperationWhileDisconnected(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotSetTrueName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_TrueNameMustBeSet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConnectionFailure(String): PrivateScope, Public, Static, HideBySig
+    InvalidPropertyValue(String, String, String): PrivateScope, Public, Static, HideBySig
+    InvalidPropertyValueReasonInt(String): PrivateScope, Public, Static, HideBySig
+    PropertyNotSetException(String): PrivateScope, Public, Static, HideBySig
+    CannotSetWhenLoginSecure(String): PrivateScope, Public, Static, HideBySig
+    PropertyNotAvailable(String): PrivateScope, Public, Static, HideBySig
+    ConnectToInvalidVersion(String): PrivateScope, Public, Static, HideBySig
+    ClassDefaulConstructorCannotBeUsed(String): PrivateScope, Public, Static, HideBySig
+    MethodNotSupported(String): PrivateScope, Public, Static, HideBySig
+    ParseError(Int32): PrivateScope, Public, Static, HideBySig
+    InvalidLockTimeout(Int32): PrivateScope, Public, Static, HideBySig
+    InvalidArgumentCacheCapacity(Int32): PrivateScope, Public, Static, HideBySig
+    InvalidArgumentCacheDuplicateKey(Object): PrivateScope, Public, Static, HideBySig
+    CannotLoadType(String): PrivateScope, Public, Static, HideBySig
+    AssemblyLoadFailed(String, String): PrivateScope, Public, Static, HideBySig
+Class Microsoft.SqlServer.Management.Common.StringConnectionInfo+Keys: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  Fields:
+    System.String ConnectionCannotBeChanged = ConnectionCannotBeChanged : Public, Static, Literal, HasDefault
+    System.String NotInTransaction = NotInTransaction : Public, Static, Literal, HasDefault
+    System.String ConnectionFailure = ConnectionFailure : Public, Static, Literal, HasDefault
+    System.String InvalidPropertyValue = InvalidPropertyValue : Public, Static, Literal, HasDefault
+    System.String InvalidPropertyValueReasonString = InvalidPropertyValueReasonString : Public, Static, Literal, HasDefault
+    System.String InvalidPropertyValueReasonInt = InvalidPropertyValueReasonInt : Public, Static, Literal, HasDefault
+    System.String ExecutionFailure = ExecutionFailure : Public, Static, Literal, HasDefault
+    System.String PropertyNotSetException = PropertyNotSetException : Public, Static, Literal, HasDefault
+    System.String CannotSetWhenLoginSecure = CannotSetWhenLoginSecure : Public, Static, Literal, HasDefault
+    System.String PropertyNotAvailable = PropertyNotAvailable : Public, Static, Literal, HasDefault
+    System.String ConnectToInvalidVersion = ConnectToInvalidVersion : Public, Static, Literal, HasDefault
+    System.String ClassDefaulConstructorCannotBeUsed = ClassDefaulConstructorCannotBeUsed : Public, Static, Literal, HasDefault
+    System.String MethodNotSupported = MethodNotSupported : Public, Static, Literal, HasDefault
+    System.String ParseError = ParseError : Public, Static, Literal, HasDefault
+    System.String PasswordCouldNotBeChanged = PasswordCouldNotBeChanged : Public, Static, Literal, HasDefault
+    System.String InvalidLockTimeout = InvalidLockTimeout : Public, Static, Literal, HasDefault
+    System.String InvalidArgumentCacheCapacity = InvalidArgumentCacheCapacity : Public, Static, Literal, HasDefault
+    System.String InvalidArgumentCacheNullKey = InvalidArgumentCacheNullKey : Public, Static, Literal, HasDefault
+    System.String InvalidArgumentCacheDuplicateKey = InvalidArgumentCacheDuplicateKey : Public, Static, Literal, HasDefault
+    System.String CannotCloseTraceController = CannotCloseTraceController : Public, Static, Literal, HasDefault
+    System.String CannotRetrieveSchemaTable = CannotRetrieveSchemaTable : Public, Static, Literal, HasDefault
+    System.String CannotReadNextEvent = CannotReadNextEvent : Public, Static, Literal, HasDefault
+    System.String CannotGetColumnName = CannotGetColumnName : Public, Static, Literal, HasDefault
+    System.String CannotGetColumnType = CannotGetColumnType : Public, Static, Literal, HasDefault
+    System.String CannotGetColumnValue = CannotGetColumnValue : Public, Static, Literal, HasDefault
+    System.String CannotSetColumnValue = CannotSetColumnValue : Public, Static, Literal, HasDefault
+    System.String CannotWriteEvent = CannotWriteEvent : Public, Static, Literal, HasDefault
+    System.String CannotCloseWriter = CannotCloseWriter : Public, Static, Literal, HasDefault
+    System.String CannotInitializeAsReader = CannotInitializeAsReader : Public, Static, Literal, HasDefault
+    System.String CannotInitializeAsWriter = CannotInitializeAsWriter : Public, Static, Literal, HasDefault
+    System.String CannotInitializeAsReplayOutputWriter = CannotInitializeAsReplayOutputWriter : Public, Static, Literal, HasDefault
+    System.String CannotPause = CannotPause : Public, Static, Literal, HasDefault
+    System.String CannotStop = CannotStop : Public, Static, Literal, HasDefault
+    System.String CannotRestart = CannotRestart : Public, Static, Literal, HasDefault
+    System.String CannotStartReplay = CannotStartReplay : Public, Static, Literal, HasDefault
+    System.String CannotPauseReplay = CannotPauseReplay : Public, Static, Literal, HasDefault
+    System.String CannotStopReplay = CannotStopReplay : Public, Static, Literal, HasDefault
+    System.String CannotLoadType = CannotLoadType : Public, Static, Literal, HasDefault
+    System.String FailedToGetSQLToolsDirPathFromInstAPI = FailedToGetSQLToolsDirPathFromInstAPI : Public, Static, Literal, HasDefault
+    System.String InstAPIIsNotInstalled = InstAPIIsNotInstalled : Public, Static, Literal, HasDefault
+    System.String CouldNotInstantiateInstAPI = CouldNotInstantiateInstAPI : Public, Static, Literal, HasDefault
+    System.String CouldNotLoadMethodInfoFromInstAPI = CouldNotLoadMethodInfoFromInstAPI : Public, Static, Literal, HasDefault
+    System.String CannotTranslateSubclass = CannotTranslateSubclass : Public, Static, Literal, HasDefault
+    System.String CannotGetOrdinal = CannotGetOrdinal : Public, Static, Literal, HasDefault
+    System.String CannotLoadInAppDomain = CannotLoadInAppDomain : Public, Static, Literal, HasDefault
+    System.String AssemblyLoadFailed = AssemblyLoadFailed : Public, Static, Literal, HasDefault
+    System.String SmoSQLCLRUnAvailable = SmoSQLCLRUnAvailable : Public, Static, Literal, HasDefault
+    System.String CannotBeSetWhileConnected = CannotBeSetWhileConnected : Public, Static, Literal, HasDefault
+    System.String CannotPerformOperationWhileDisconnected = CannotPerformOperationWhileDisconnected : Public, Static, Literal, HasDefault
+    System.String CannotSetTrueName = CannotSetTrueName : Public, Static, Literal, HasDefault
+    System.String TrueNameMustBeSet = TrueNameMustBeSet : Public, Static, Literal, HasDefault
+  Properties:
+    System.Globalization.CultureInfo Culture 'get set' : 
+  Methods:
+    get_Culture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetString(String, Object): PrivateScope, Public, Static, HideBySig
+    GetString(String, Object, Object): PrivateScope, Public, Static, HideBySig
+    GetString(String, Object, Object, Object): PrivateScope, Public, Static, HideBySig
+Class AssemblyVersionInfo: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String VersionString = 11.0.0.0 : Public, Static, Literal, HasDefault
+    Int32 MajorVersion = 11 : Public, Static, Literal, HasDefault
+    Int32 MinorVersion = 0 : Public, Static, Literal, HasDefault
+    Int32 BuildVersion = 2100 : Public, Static, Literal, HasDefault
+    Int32 SPLevel = 0 : Public, Static, Literal, HasDefault
+    System.String ProductVersionString = 11.0 : Public, Static, Literal, HasDefault
+    System.String ProductNameString = Microsoft SQL Server : Public, Static, Literal, HasDefault
+    System.String SqlEngineUsageMetricsRoleGuidString = {0xbd7f7c0d, 0x7c36, 0x4721, {0xaf, 0xa8, 0xb, 0xa7, 0x0, 0xe2, 0x6d, 0x9e}} : Public, Static, Literal, HasDefault
+    System.String ProductNameBrandingString = SQL Server 2012 : Public, Static, Literal, HasDefault
+    System.String LongProductNameBrandingString = Microsoft SQL Server 2012 : Public, Static, Literal, HasDefault
+    System.String ProductNameShortcutBrandingString = SQL Server 2012 : Public, Static, Literal, HasDefault
+    System.String VersionLocationString = 110 : Public, Static, Literal, HasDefault
+    System.String ProductVersionLocationString = 110 : Public, Static, Literal, HasDefault
+    System.String VersionHelpKeywordPrefix = sql11 : Public, Static, Literal, HasDefault
+    System.String VersionHelpSettingsToken = SQLServerBooksOnline.11.0 : Public, Static, Literal, HasDefault
+    System.String SetupSupportFolder = SQLServer2012 : Public, Static, Literal, HasDefault
+    System.String ProductLicenseFile = SQLServer2012 : Public, Static, Literal, HasDefault
+    System.String ProductUpdateCategory = 7fe4630a-0330-4b01-a5e6-a77c7ad34eb0 : Public, Static, Literal, HasDefault
+    System.String SqlProductFamilyCode = {7f121c35-f095-47aa-bc04-d214bc04727a} : Public, Static, Literal, HasDefault
+    System.String ProductDiscoveryId = SQL2011 : Public, Static, Literal, HasDefault
+    System.String SqlInstanceIDPrefix = MSSQL11 : Public, Static, Literal, HasDefault
+    System.String AsInstanceIDPrefix = MSAS11 : Public, Static, Literal, HasDefault
+    System.String RsInstanceIDPrefix = MSRS11 : Public, Static, Literal, HasDefault
+    System.String MaxMaintenanceVersion = 11.0.0.0 : Public, Static, Literal, HasDefault
+    UInt32 evalTimeBombValue = 180 : Public, Static, Literal, HasDefault
+    UInt32 currentReleaseTimeBombValue = 0 : Public, Static, Literal, HasDefault
+    System.String WerEventNameSetupMsi = SQL110MSI : Public, Static, Literal, HasDefault
+    System.String WerEventNameSetupConfig = SQL110Exception : Public, Static, Literal, HasDefault
+    System.String ASUsageMetricsRoleGuidString = {0x2414bc1b, 0x1572, 0x4cd9, {0x9c, 0xa5, 0x65, 0x16, 0x6d, 0x8d, 0xef, 0x3d}} : Public, Static, Literal, HasDefault
+    System.String VersionBIDSHelpNamespace = ms-help://MS.VSCC.v90 : Public, Static, Literal, HasDefault
+    System.String VisualStudioShellVersion = 10.0 : Public, Static, Literal, HasDefault
+  Properties:
+    System.String VersionHelpNamespace 'get ' : 
+  Methods:
+    get_VersionHelpNamespace(): PrivateScope, Public, Static, HideBySig, SpecialName

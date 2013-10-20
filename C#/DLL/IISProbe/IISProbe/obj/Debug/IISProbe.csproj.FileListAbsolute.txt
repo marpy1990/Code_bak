@@ -1,0 +1,4 @@
+D:\Code\C#\DLL\IISProbe\IISProbe\bin\Debug\IISProbe.dll
+D:\Code\C#\DLL\IISProbe\IISProbe\bin\Debug\IISProbe.pdb
+D:\Code\C#\DLL\IISProbe\IISProbe\obj\Debug\IISProbe.dll
+D:\Code\C#\DLL\IISProbe\IISProbe\obj\Debug\IISProbe.pdb

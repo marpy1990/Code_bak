@@ -1,0 +1,20 @@
+monitoring-server.zip是服务端，java工程
+MonitoringClient.zip是C#客户端
+apache-activemq-5.8.0.zip是消息中间件
+
+1. 启动ActiveMQ
+
+运行压缩包下的bin/activemq.bat即可。
+
+2. 启动服务端
+
+第一次启动前要初始化数据库，运行DBHelper.java即可。有异常抛出是正常现象。
+然后运行MonitorServer.java。
+
+3. 启动客户端
+
+导入工程后直接运行就可以了，main函数在MainEntry.cs里。
+
+在服务器所在的机器上打开http://localhost:40000，进入管理界面。应该能在左边栏看到客户端机器。有新客户端连进来时，需要刷新页面才能看到。
+点击机器名进入机器控制界面。在Probe Settings标签下可以增加Probe和修改Probe的采样间隔，客户端应该会立即有反应。
+点Graph标签查看实时图表，Event Viewer标签查看事件列表。

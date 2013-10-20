@@ -1,0 +1,6 @@
+D:\Code\C#\DLL\SQLProbe\SQLProbe\bin\Debug\SQLProbe.dll
+D:\Code\C#\DLL\SQLProbe\SQLProbe\bin\Debug\SQLProbe.pdb
+D:\Code\C#\DLL\SQLProbe\SQLProbe\bin\Debug\Probe.dll
+D:\Code\C#\DLL\SQLProbe\SQLProbe\bin\Debug\Probe.pdb
+D:\Code\C#\DLL\SQLProbe\SQLProbe\obj\Debug\SQLProbe.dll
+D:\Code\C#\DLL\SQLProbe\SQLProbe\obj\Debug\SQLProbe.pdb

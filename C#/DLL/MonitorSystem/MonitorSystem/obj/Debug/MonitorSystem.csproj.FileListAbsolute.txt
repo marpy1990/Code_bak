@@ -1,0 +1,5 @@
+D:\Code\Visual Studio 2012\DLL\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.dll
+D:\Code\Visual Studio 2012\DLL\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.pdb
+D:\Code\Visual Studio 2012\DLL\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.dll
+D:\Code\Visual Studio 2012\DLL\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.pdb
+D:\Code\Visual Studio 2012\DLL\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.csprojResolveAssemblyReference.cache

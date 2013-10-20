@@ -1,0 +1,13 @@
+D:\Code\Visual Studio 2012\Test\test10\test10\bin\Debug\test10.exe.config
+D:\Code\C#\Test\test10\test10\bin\Debug\test10.exe.config
+D:\Code\C#\Test\test10\test10\bin\Debug\test10.exe
+D:\Code\C#\Test\test10\test10\bin\Debug\test10.pdb
+D:\Code\C#\Test\test10\test10\obj\Debug\test10.csprojResolveAssemblyReference.cache
+D:\Code\C#\Test\test10\test10\obj\Debug\test10.exe
+D:\Code\C#\Test\test10\test10\obj\Debug\test10.pdb
+D:\Code\C#\Test\test10\test10\bin\Debug\Probe.dll
+D:\Code\C#\Test\test10\test10\bin\Debug\SQLProbe.dll
+D:\Code\C#\Test\test10\test10\bin\Debug\Probe.pdb
+D:\Code\C#\Test\test10\test10\bin\Debug\SQLProbe.pdb
+D:\Code\C#\Test\test10\test10\bin\Debug\IISProbe.dll
+D:\Code\C#\Test\test10\test10\bin\Debug\IISProbe.pdb

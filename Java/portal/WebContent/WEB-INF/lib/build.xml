@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="monitoring" default="build">
+	<description>
+            The predictive monitoring framework
+    </description>
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="bin" />
+	<property name="dist.dir" value="dist" />
+	
+	<path id="lib.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="build">
+		<mkdir dir="${build.dir}" />
+		<javac classpathref="lib.classpath" destdir="${build.dir}">
+			<src path="${src.dir}" />
+		</javac>
+	</target>
+
+	<target name="dist" depends="build">
+		<jar jarfile="monpubsub.jar">
+			<fileset dir="${build.dir}" />
+		</jar>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${build.dir}">
+		</delete>
+		<delete file="monpubsub.jar">
+		</delete>
+	</target>
+
+</project>

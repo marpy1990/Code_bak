@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Tue Oct 08 06:21:50 CST 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0141-9503-1a3d-000003644080 
+on database directory C:\workspaces\ms\monitoring-dingj\db  with class loader sun.misc.Launcher$AppClassLoader@535ff48b 
+Loaded from file:/C:/workspaces/ms/monitoring-dingj/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_31-b05
+user.dir=C:\workspaces\ms\monitoring-dingj
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

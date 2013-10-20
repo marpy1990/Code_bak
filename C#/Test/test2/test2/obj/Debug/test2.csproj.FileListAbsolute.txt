@@ -1,0 +1,18 @@
+D:\code\Visual Studio 2012\C++\Test\test2\test2\bin\Debug\test2.exe.config
+D:\code\Visual Studio 2012\C++\Test\test2\test2\bin\Debug\test2.exe
+D:\code\Visual Studio 2012\C++\Test\test2\test2\bin\Debug\test2.pdb
+D:\code\Visual Studio 2012\C++\Test\test2\test2\obj\Debug\test2.csprojResolveAssemblyReference.cache
+D:\code\Visual Studio 2012\C++\Test\test2\test2\obj\Debug\test2.exe
+D:\code\Visual Studio 2012\C++\Test\test2\test2\obj\Debug\test2.pdb
+D:\Code\Visual Studio 2012\Test\test2\test2\bin\Debug\test2.exe.config
+D:\Code\Visual Studio 2012\Test\test2\test2\obj\Debug\test2.exe
+D:\Code\Visual Studio 2012\Test\test2\test2\obj\Debug\test2.pdb
+D:\Code\Visual Studio 2012\Test\test2\test2\obj\Debug\test2.csprojResolveAssemblyReference.cache
+D:\Code\Visual Studio 2012\Test\test2\test2\bin\Debug\test2.exe
+D:\Code\Visual Studio 2012\Test\test2\test2\bin\Debug\test2.pdb
+D:\Code\C#\Test\test2\test2\bin\Debug\test2.exe.config
+D:\Code\C#\Test\test2\test2\obj\Debug\test2.exe
+D:\Code\C#\Test\test2\test2\obj\Debug\test2.pdb
+D:\Code\C#\Test\test2\test2\bin\Debug\test2.exe
+D:\Code\C#\Test\test2\test2\bin\Debug\test2.pdb
+D:\Code\C#\Test\test2\test2\obj\Debug\test2.csprojResolveAssemblyReference.cache

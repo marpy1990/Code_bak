@@ -1,0 +1,365 @@
+package monitoring.manager;
+
+import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.logging.Logger;
+
+
+public enum DBHelper {
+	INSTANCE;
+	
+	public static DBHelper getInstance() {
+		return INSTANCE;
+	}
+	
+	private Connection conn;
+	private PreparedStatement insertStmt;
+	private PreparedStatement queryEventStmt;
+	private PreparedStatement insertProbeStmt, updateProbeStmt, deleteProbeStmt, queryProbeStmt;
+	
+	/*
+	private String CONNECTION_STRING = "jdbc:derby:db;create=true";
+	private String DRIVER_CLASSNAME = "org.apache.derby.jdbc.EmbeddedDriver";
+	private String USERNAME = "root";
+	private String PASSWORD = "root";
+	*/
+	private String CONNECTION_STRING = "jdbc:derby:db;create=true";
+	private String DRIVER_CLASSNAME = "org.apache.derby.jdbc.EmbeddedDriver";
+	private String USERNAME = "root";
+	private String PASSWORD = "root";
+	
+	private Logger logger = Logger.getLogger("DBHelper");
+	
+	static {
+		INSTANCE.init();
+	}
+	
+	private String SQL_CREATE_EVENT_TABLE = "CREATE TABLE Event " +
+			"(ID int NOT NULL GENERATED ALWAYS AS IDENTITY," +
+			"Type varchar(50) NOT NULL," +
+			"MachineName varchar(30) NOT NULL," +
+			"InstanceName varchar(30) NOT NULL, " + 
+			"Timestamp varchar(20) NOT NULL," +
+			"Value varchar(100) NOT NULL," +
+			"PRIMARY KEY (id))";
+	
+	private String SQL_CREATE_PROBE_TABLE = "CREATE TABLE Probe " +
+			"(ID int NOT NULL GENERATED ALWAYS AS IDENTITY," +
+			"Type varchar(50) NOT NULL," +
+			"MachineName varchar(30) NOT NULL," +
+			"Period int NOT NULL," +
+			"PRIMARY KEY (id))";
+	
+	private String SQL_CREATE_MACHINE_TABLE = "CREATE TABLE Machine " +
+			"(ID int NOT NULL GENERATED ALWAYS AS IDENTITY," +
+			"MachineName varchar(30) NOT NULL," +
+			"PRIMARY KEY (id))";
+	
+	// a new event
+	private String SQL_INSERT_EVENT = "INSERT INTO Event " +
+			"(Type, MachineName, InstanceName, Timestamp, Value) VALUES (?, ?, ?, ?, ?)";
+	
+	private String SQL_QUERY_EVENT = "SELECT * FROM Event WHERE MachineName=? ORDER BY ID DESC FETCH NEXT 30 ROWS ONLY";
+	
+	private String SQL_QUERY_EVENT2 = "SELECT * FROM Event WHERE MachineName=? AND Type=? ORDER BY ID DESC FETCH NEXT 30 ROWS ONLY";
+
+	private String SQL_QUERY_EVENT3 = "SELECT * FROM Event WHERE MachineName=? AND Type=? AND InstanceName=? ORDER BY ID DESC FETCH NEXT 30 ROWS ONLY";
+
+	private String SQL_QUERY_GRAPH = "SELECT InstanceName, Timestamp, Value FROM Event WHERE MachineName=? " +
+			"AND Type = ? ORDER BY ID DESC FETCH NEXT 300 ROWS ONLY";
+	
+	private String SQL_INSERT_PROBE = "INSERT INTO Probe " +
+			"(Type, MachineName, Period) VALUES (?,?,?)";
+	
+	private String SQL_UPDATE_PROBE = "UPDATE Probe SET Period = ? WHERE MachineName = ? AND Type=?";
+	
+	private String SQL_DELETE_PROBE = "DELETE FROM Probe WHERE ID = ?";
+	
+	private String SQL_QUERY_PROBE = "SELECT * FROM Probe WHERE MachineName = ?";
+	
+	private String SQL_MACHINE_LIST = "SELECT DISTINCT MachineName FROM Event";
+	
+	private String SQL_TYPE_LIST = "SELECT DISTINCT Type FROM Event WHERE MachineName=?";
+	
+	private String SQL_INSTANCENAME_LIST = "SELECT DISTINCT InstanceName FROM Event WHERE MachineName=? AND Type=?";
+	
+	private PreparedStatement queryGraphStmt;
+	private PreparedStatement typeListStmt;
+	private PreparedStatement instanceNameListStmt;
+	private PreparedStatement queryEventStmt2;
+	private PreparedStatement queryEventStmt3;
+	
+	
+	public void init() {
+		try {
+			Class.forName(DRIVER_CLASSNAME).newInstance();
+		} catch (Exception e) {
+			logger.info("Derby cannot be instantiated.");
+			return;
+		}
+		
+		try {
+			conn = DriverManager.getConnection(
+					CONNECTION_STRING, USERNAME, PASSWORD);
+		} catch (SQLException dbNotFound) {
+			dbNotFound.printStackTrace();
+			return;
+		}
+		try {
+			prepareAll();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void prepareAll() throws SQLException {
+		insertStmt = conn.prepareStatement(SQL_INSERT_EVENT);
+		queryEventStmt = conn.prepareStatement(SQL_QUERY_EVENT);
+		queryEventStmt2 = conn.prepareStatement(SQL_QUERY_EVENT2);
+		queryEventStmt3= conn.prepareStatement(SQL_QUERY_EVENT3);
+		insertProbeStmt = conn.prepareStatement(SQL_INSERT_PROBE);
+		deleteProbeStmt = conn.prepareStatement(SQL_DELETE_PROBE);
+		updateProbeStmt = conn.prepareStatement(SQL_UPDATE_PROBE);
+		queryProbeStmt = conn.prepareStatement(SQL_QUERY_PROBE);
+		queryGraphStmt = conn.prepareStatement(SQL_QUERY_GRAPH);
+		typeListStmt = conn.prepareStatement(SQL_TYPE_LIST);
+		instanceNameListStmt = conn.prepareStatement(SQL_INSTANCENAME_LIST);
+	}
+	
+	public Set<String> queryTypeList(String machineName) {
+		Set<String> res = new HashSet<String>();
+		try {
+			typeListStmt.setString(1, machineName);
+			ResultSet rs = typeListStmt.executeQuery();
+			while (rs.next()) {
+				res.add(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	
+	public Set<String> queryInstanceNameList(String machineName, String type) {
+		Set<String> res = new HashSet<String>();
+		try {
+			instanceNameListStmt.setString(1, machineName);
+			instanceNameListStmt.setString(2, type);
+			ResultSet rs = instanceNameListStmt.executeQuery();
+			while (rs.next()) {
+				res.add(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	
+	public void saveEvent(String type, String machineName, String instanceName, String timestamp, String value) {
+		try {
+			insertStmt.setString(1, type);
+			insertStmt.setString(2, machineName);
+			insertStmt.setString(3, instanceName);
+			insertStmt.setString(4, timestamp);
+			insertStmt.setString(5, value);
+			insertStmt.execute();
+		} catch (SQLException e) {
+			logger.warning("Failed to save ("+type+"@"+machineName+":"+instanceName+":"+value);
+			return;
+		}
+		logger.info("Saved "+type+"@"+machineName+":"+instanceName+":"+value);
+	}
+	
+	public ArrayList<Probe> queryProbeByMachineName(String machineName) {
+		ArrayList<Probe> res = new ArrayList<Probe>();
+		try {
+			queryProbeStmt.setString(1, machineName);
+			ResultSet rs = queryProbeStmt.executeQuery();
+			while (rs.next()) {
+				Probe p = new Probe();
+				p.setId(rs.getInt("ID"));
+				p.setMachineName(rs.getString("MachineName"));
+				p.setPeriod(rs.getInt("Period"));
+				p.setType(rs.getString("Type"));
+				res.add(p);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	
+	public void insertProbe(String type, String machineName, int period) {
+		try {
+			updateProbeStmt.setInt(1, period);
+			updateProbeStmt.setString(2, machineName);
+			updateProbeStmt.setString(3, type);
+			updateProbeStmt.execute();
+			if (updateProbeStmt.getUpdateCount()<1) {
+				insertProbeStmt.setString(1, type);
+				insertProbeStmt.setString(2, machineName);
+				insertProbeStmt.setInt(3, period);
+				insertProbeStmt.execute();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void deleteProbe(int id) {
+		try {
+			deleteProbeStmt.setInt(1, id);
+			deleteProbeStmt.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public Set<String> getMachineList() {
+		Set<String> res = new HashSet<String>();
+		try {
+			ResultSet rs = conn.createStatement().executeQuery(SQL_MACHINE_LIST);
+			while (rs.next()) {
+				res.add(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+		
+	}
+	
+	public ArrayList<Event> queryEventByMachineName(String machineName) {
+		ArrayList<Event> res = new ArrayList<Event>();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		try {
+			queryEventStmt.setString(1, machineName);
+			ResultSet rs = queryEventStmt.executeQuery();
+			while (rs.next()) {
+				Event e = new Event();
+				e.setId(rs.getInt("ID"));
+				e.setInstanceName(rs.getString("InstanceName"));
+				e.setMachineName(rs.getString("MachineName"));
+				Date d = new Date((long)(Double.parseDouble(rs.getString("Timestamp"))-28800)*1000);
+				
+				e.setTimestamp(df.format(d));
+				e.setType(rs.getString("Type"));
+				e.setValue(rs.getString("Value"));
+				res.add(e);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	
+	public ArrayList<Event> queryEventByMachineName2(String machineName, String type) {
+		ArrayList<Event> res = new ArrayList<Event>();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		try {
+			queryEventStmt2.setString(1, machineName);
+			queryEventStmt2.setString(2, type);
+			ResultSet rs = queryEventStmt2.executeQuery();
+			while (rs.next()) {
+				Event e = new Event();
+				e.setId(rs.getInt("ID"));
+				e.setInstanceName(rs.getString("InstanceName"));
+				e.setMachineName(rs.getString("MachineName"));
+				Date d = new Date((long)(Double.parseDouble(rs.getString("Timestamp"))-28800)*1000);
+				
+				e.setTimestamp(df.format(d));
+				e.setType(rs.getString("Type"));
+				e.setValue(rs.getString("Value"));
+				res.add(e);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	public ArrayList<Event> queryEventByMachineName3(String machineName, String type, String instanceName) {
+		ArrayList<Event> res = new ArrayList<Event>();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		try {
+			queryEventStmt3.setString(1, machineName);
+			queryEventStmt3.setString(2, type);
+			queryEventStmt3.setString(3, instanceName);
+			ResultSet rs = queryEventStmt3.executeQuery();
+			while (rs.next()) {
+				Event e = new Event();
+				e.setId(rs.getInt("ID"));
+				e.setInstanceName(rs.getString("InstanceName"));
+				e.setMachineName(rs.getString("MachineName"));
+				Date d = new Date((long)(Double.parseDouble(rs.getString("Timestamp"))-28800)*1000);
+				
+				e.setTimestamp(df.format(d));
+				e.setType(rs.getString("Type"));
+				e.setValue(rs.getString("Value"));
+				res.add(e);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return res;
+	}
+	public Map<String, ArrayList<double[]>> queryGraph(String machineName, String type) {
+		Map<String, ArrayList<double[]>> map = new HashMap<String, ArrayList<double[]>>();
+		try {
+			queryGraphStmt.setString(1, machineName);
+			queryGraphStmt.setString(2, type);
+			ResultSet rs = queryGraphStmt.executeQuery();
+			while (rs.next()) {
+				double[] data = new double[2];
+				String v = rs.getString("Value");
+				try {
+					data[1] = Double.parseDouble(v);
+				} catch (NumberFormatException e) {
+					continue;
+				}
+				data[0] = Double.parseDouble(rs.getString("Timestamp"));
+				String in = rs.getString("InstanceName");
+				ArrayList<double[]> l = map.get(in);
+				if (l==null) {
+					l = new ArrayList<double[]>();
+					map.put(in, l);
+				}
+				l.add(data);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return map;
+	}
+	
+	public static void main(String[] args) {
+		try {
+			Class.forName(INSTANCE.DRIVER_CLASSNAME).newInstance();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return;
+		}
+		
+		try {
+			Statement stmt = DriverManager.getConnection(
+					INSTANCE.CONNECTION_STRING, INSTANCE.USERNAME, INSTANCE.PASSWORD).createStatement();
+			stmt.execute(INSTANCE.SQL_CREATE_EVENT_TABLE);
+			stmt.execute(INSTANCE.SQL_CREATE_PROBE_TABLE);
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return;
+		}
+	}
+}
