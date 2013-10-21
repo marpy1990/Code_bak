@@ -1,0 +1,27 @@
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\test6.exe.config
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\test6.exe
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\test6.pdb
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\ZedGraph.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\ZedGraph.xml
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\de\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\es\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\fr\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\hu\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\it\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\ja\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\pt\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\ru\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\sk\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\sv\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\tr\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.csprojResolveAssemblyReference.cache
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.Form1.resources
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.Properties.Resources.resources
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.csproj.GenerateResource.Cache
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.exe
+D:\Code\Visual Studio 2012\test6\test6\obj\Debug\test6.pdb
+D:\Code\C#\Test\test9\test6\bin\Debug\test6.exe.config
+D:\Code\C#\Test\test9\test6\obj\Debug\test6.exe
+D:\Code\C#\Test\test9\test6\obj\Debug\test6.pdb

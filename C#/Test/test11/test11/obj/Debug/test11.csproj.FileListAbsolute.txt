@@ -1,0 +1,8 @@
+D:\Code\C#\Test\test11\test11\bin\Debug\test11.exe
+D:\Code\C#\Test\test11\test11\bin\Debug\test11.exe.config
+D:\Code\C#\Test\test11\test11\bin\Debug\test11.pdb
+D:\Code\C#\Test\test11\test11\obj\Debug\test11.csprojResolveAssemblyReference.cache
+D:\Code\C#\Test\test11\test11\obj\Debug\test11.Properties.Resources.resources
+D:\Code\C#\Test\test11\test11\obj\Debug\test11.csproj.GenerateResource.Cache
+D:\Code\C#\Test\test11\test11\obj\Debug\test11.exe
+D:\Code\C#\Test\test11\test11\obj\Debug\test11.pdb

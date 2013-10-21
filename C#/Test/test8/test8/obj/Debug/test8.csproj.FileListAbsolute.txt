@@ -1,0 +1,13 @@
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\test8.exe.config
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\test8.exe
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\test8.pdb
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\Predictor.dll
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\Predictor.pdb
+D:\Code\Visual Studio 2012\Test\test8\test8\obj\Debug\test8.csprojResolveAssemblyReference.cache
+D:\Code\Visual Studio 2012\Test\test8\test8\obj\Debug\test8.exe
+D:\Code\Visual Studio 2012\Test\test8\test8\obj\Debug\test8.pdb
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\MonitorSystem.dll
+D:\Code\Visual Studio 2012\Test\test8\test8\bin\Debug\MonitorSystem.pdb
+D:\Code\C#\Test\test8\test8\bin\Debug\test8.exe.config
+D:\Code\C#\Test\test8\test8\obj\Debug\test8.exe
+D:\Code\C#\Test\test8\test8\obj\Debug\test8.pdb

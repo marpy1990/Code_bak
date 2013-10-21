@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>prediction</title>
+  <script type="text/javascript" src="js/jquery-1.6.2.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.selection.js"></script>
+  <script src=../dwr/engine.js></script>
+  <script src=../dwr/interface/DataServices.js></script>
+  <script src=../dwr/interface/PredictionServices.js></script>
+  <script>
+
+  var rawData;
+
+  DataServices.getData( function(res) {
+    rawData = res;
+    addGraphs(res);
+    showData(res);
+    var startIdx = document.getElementById("start");
+    startIdx.max = res[0].length;
+    startIdx.value = startIdx.max - Math.round(startIdx.max/6);
+  });
+
+  PredictionServices.getAvailablePredictorsNames( function(res) {
+    var select = document.getElementById("predictor");
+    select.options[select.options.length] = new Option("select a Predictor",null);
+    for(index in res) {
+      select.options[select.options.length] = new Option(res[index], res[index]);
+    }
+  });
+
+  function addGraphs(d) {
+    // add placeholders
+    for(var i=0 ; i < d.length; i++){
+      document.getElementById('rawData').innerHTML += 
+        '<div>'+ 
+        '<div id="dim'+ i +'" style="width: 1000px; height: 300px;"></div>'+
+        '<div id="dim'+ i +'overview" style="width: 200px; height: 60px;"></div>'+
+        '</div>';
+    }
+  };
+
+  function showData(d) {
+    // plot data
+    var plot = [];
+    var overview = [];
+    var repert = [];
+    repert[0] = d[0][0];
+    repert[1] = repert[0];
+    repert[1][1] = 0;
+    for(var i=0 ; i < d.length; i++){
+      var options = {
+        legend: {
+          show: false
+        },
+        series: {
+          lines: {
+            show: true
+          },
+          points: {
+            show: true
+          }
+        },
+        yaxis: {
+          ticks: 10
+        },
+        selection: {
+          mode: "xy"
+        }
+      };
+		  plot[i] = $.plot('#dim'+i, [d[i],repert], options);
+		  overview[i] = $.plot('#dim'+i+'overview', [d[i]],{
+        legend: {
+          show: false
+        },
+        series: {
+          lines: {
+            show: true,
+            lineWidth: 1
+          },
+          shadowSize: 0
+        },
+        grid: {
+          color: "#999"
+        },
+        selection: {
+          mode: "xy"
+        }
+      });
+        
+      // now connect the two
+      /*
+      $('#dim'+i).bind('plotselected', function (event, ranges) {
+        console.log("c'est l'histoire d'un mec qui saute du 15ème étage");
+        // clamp the zooming to prevent eternal zoom
+
+        ranges.xaxis.to = Math.round(ranges.xaxis.to);
+        ranges.xaxis.from = Math.round(ranges.xaxis.from);
+        ranges.yaxis.to = Math.round(ranges.yaxis.to);
+        ranges.yaxis.from = Math.round(ranges.yaxis.from);
+        if (ranges.xaxis.to - ranges.xaxis.from < 1) {
+          ranges.xaxis.to = ranges.xaxis.from + 1;
+        }
+        if (ranges.yaxis.to - ranges.yaxis.from < 1) {
+          ranges.yaxis.to = ranges.yaxis.from + 1;
+        }
+
+        // do the zooming
+
+        var i = parseInt(event.currentTarget.id.split("dim")[1]);
+        plot[i] = $.plot('#dim'+i, [d[i]],
+          $.extend(true, {}, options, {
+            xaxis: { min: ranges.xaxis.from, max: ranges.xaxis.to },
+            yaxis: { min: ranges.yaxis.from, max: ranges.yaxis.to },
+          })
+        );
+
+        console.log("jusqu'ici tout va bien ..");
+        // don't fire event on the overview to prevent eternal loop
+        overview[i].setSelection(ranges, true);
+      }); 
+
+      $('#dim'+i+'overview').bind('plotselected', function (event, ranges) {
+        var i = parseInt(event.currentTarget.id.split("dim")[1]);
+        plot[i].setSelection(ranges);
+      });
+      */
+    }
+	};
+  
+  function startPrediction() {
+    var r = document.getElementById("predictor");
+    var s = document.getElementById("start");
+    var l = document.getElementById("fleche");
+    r.disabled = true;
+    s.disabled = true;
+    l.disabled = true;
+    var predicteur = r.value;
+    var startIdx = s.value;
+    var lengthPred = l.value;
+    var stopIdx = rawData[0].length-lengthPred-1;
+    var predictionLoop = function(res) {
+      if(startIdx >= stopIdx){
+        endPrediction(res);
+      }else{
+        var fewTimesSteps = 2*lengthPred;
+        var alpha = Math.max(0, startIdx-fewTimesSteps);
+        var zeta = Math.min(startIdx+fewTimesSteps, rawData[0].length-1);
+        for(var i=0 ; i < res.length; i++){
+  		    $.plot('#dim'+i, [rawData[i].slice(alpha,zeta),res[i]]);
+        }
+        startIdx++;
+        setTimeout(function(){PredictionServices.predict(predicteur,"example",startIdx,lengthPred,predictionLoop)},200);
+      }
+    };
+    PredictionServices.predict(predicteur,"example",startIdx,lengthPred,predictionLoop);
+  };
+  
+  function endPrediction(res) {
+    var r = document.getElementById("predictor");
+    var s = document.getElementById("start");
+    var l = document.getElementById("fleche");
+    r.disabled = false;
+    s.disabled = false;
+    l.disabled = false;
+    var predicteur = r.value;
+    var startIdx = s.value;
+    var lengthPred = l.value;
+    PredictionServices.getStrategiesEfficiencies(function(res) {
+      console.log(res);
+      var results = document.getElementById("results");
+      var resString = "";
+      for (property in res) {
+        resString += '<TD>'+ property + ': ' + res[property]+'</TD></TR><TR>\n';
+      };
+      var size = Object.keys(res).length;
+      results.innerHTML += '<TR>'+ 
+      '<TD ROWSPAN="'+size+'"> '+predicteur+' </TD>'+ 
+      '<TD ROWSPAN="'+size+'"> '+startIdx+' </TD>'+ 
+      '<TD ROWSPAN="'+size+'"> '+lengthPred+' </TD>'+ 
+      resString+
+      '</TR>';
+    });
+    setPoolSizes();     
+    showData(rawData);
+    PredictionServices.reset();
+  };
+
+  function switchDisplay(elt) {
+    elt.style.display = (elt.style.display=='none')?'block':'none';
+  };
+
+  function diplayPredictorAdditionalOptions(sel) {
+    var val = sel.options[sel.selectedIndex].value;
+    var op = document.getElementById("options");
+    var button = document.getElementById("predict");
+    button.disabled = false;
+    switch (val) {
+      case "EnsemblePredict":
+        op.innerHTML = '<h3>Predictor specific options</h3>' +
+          'number of versions in an algorithm pool <input id=ps type=number name=poolSizes '+
+          'onChange=javascript:setPoolSizes() '+
+          'value=3 min=1 max=5> <br/> '+
+          'Trust evaluation strategy <select id=scorer></select>';
+        PredictionServices.getAvailableScorersNames( function(res) {
+          var select = document.getElementById("scorer");
+          select.options[select.options.length] = new Option("select a scorer",null);
+          for(index in res) {
+            select.options[select.options.length] = new Option(res[index], res[index]);
+          }
+        });
+        break;
+      default:
+        op.innerHTML = "";
+        button.disabled = true;
+        break;
+    };
+  };
+
+  function setPoolSizes() {
+    var ps = document.getElementById("ps");
+    PredictionServices.setPoolSizes(ps.value); 
+  };
+  </script>
+<head/>
+
+<body>
+  <h2>Select host</h2>
+  List of the hosts datas available from databases.
+  <i>For now only one host data is available so they it is loaded by default.</i>
+
+  <h2 onclick=javascipt:switchDisplay(document.getElementById('rawData'));>Data</h2>
+  <div id='rawData'></div>
+
+  <h2>Prediction <button id=predict onclick=javascript:startPrediction() disabled=true>start</button> </h2>
+
+  predictor <select id=predictor onChange=javascript:diplayPredictorAdditionalOptions(this)></select>
+  begin <input id=start type=number title="starting point" value=1000 min=1 max=1200>
+  sight range <input id=fleche type=number title="prediction length" value=3 min=1 max=100>
+  
+  <TABLE id=results BORDER="1"> 
+    <CAPTION> Summary </CAPTION> 
+    <TR> 
+      <TH> Predictor </TH> 
+      <TH> Begin </TH>
+      <TH> Sigth Range </TH> 
+      <TH> Result </TH> 
+    </TR> 
+  </TABLE> 
+
+  <div id='options'> </div>
+  
+</body>
+</html>

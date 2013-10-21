@@ -1,0 +1,13 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+<dwr>
+	<allow>
+		<create creator="static" javascript="DB" scope="application">
+			<param name="class" value="monitoring.manager.MQClient" />
+		</create>
+		<convert converter="bean" match="monitoring.manager.Probe"/>
+		<convert converter="bean" match="monitoring.manager.MQClient"/>
+	</allow>
+	
+</dwr>

@@ -1,0 +1,31 @@
+#machine-list {
+	margin: 15px;
+}
+
+#machine-list a {
+	padding: 6px 0 6px 12px;
+	display:block;
+	border-left: 5px solid white;
+}
+
+#machine-list a.active, #machine-list a:hover {
+	border-left: 5px solid #00589F;
+	background-color: #fcfcfc;
+	text-decoration: none;
+}
+
+.probe-table, .graph-container {
+	margin: 20px 0px 20px 0px;
+	border-bottom: 1px solid #eee;
+}
+#set-probe {
+	margin-top: 20px;
+}
+label {
+	margin-top: 10px;
+}
+#graph {
+	width: 800px;
+	height: 500px;
+	margin: 25px;
+}

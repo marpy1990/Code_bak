@@ -1,0 +1,10 @@
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\test5.exe.config
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\test5.exe
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\test5.pdb
+D:\Code\Visual Studio 2012\Test\test5\test5\obj\Debug\test5.exe
+D:\Code\Visual Studio 2012\Test\test5\test5\obj\Debug\test5.pdb
+D:\Code\Visual Studio 2012\Test\test5\test5\obj\Debug\test5.csprojResolveAssemblyReference.cache
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\MonitorSystem.dll
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\MonitorSystem.pdb
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\Predictor.dll
+D:\Code\Visual Studio 2012\Test\test5\test5\bin\Debug\Predictor.pdb

@@ -1,0 +1,67 @@
+D:\Code\C#\User\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+D:\Code\C#\User\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+D:\Code\C#\User\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+D:\C source code\Test\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+D:\C source code\Test\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+D:\C source code\Test\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.ConfigForm.resources
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+D:\C source code\Test\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.TestForm.resources
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.UserConfigForm.resources
+D:\Code\C#\User\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.UserConfigForm.resources
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.TestForm.resources
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.dll
+C:\Users\Administrator\Downloads\MonitorClient\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.pdb
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.dll
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.pdb
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.UserConfigForm.resources
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.TestForm.resources
+C:\Users\sdf\Desktop\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.dll
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.pdb
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.UserConfigForm.resources
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.TestForm.resources
+D:\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe.config
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.exe
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.pdb
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.exe
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\MonitorClient.pdb
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.dll
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\bin\Debug\Apache.NMS.pdb
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.UserConfigForm.resources
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.TestForm.resources
+C:\Users\Administrator\Desktop\Code\C#\User\MonitorSystem_v131008_jdk\MonitorClient\MonitorClient\obj\Debug\MonitorClient.csproj.GenerateResource.Cache

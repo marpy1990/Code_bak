@@ -1,0 +1,6 @@
+D:\Code\Visual Studio 2012\Test\test4\test4\bin\Debug\test4.exe.config
+D:\Code\Visual Studio 2012\Test\test4\test4\bin\Debug\test4.exe
+D:\Code\Visual Studio 2012\Test\test4\test4\bin\Debug\test4.pdb
+D:\Code\Visual Studio 2012\Test\test4\test4\obj\Debug\test4.csprojResolveAssemblyReference.cache
+D:\Code\Visual Studio 2012\Test\test4\test4\obj\Debug\test4.exe
+D:\Code\Visual Studio 2012\Test\test4\test4\obj\Debug\test4.pdb

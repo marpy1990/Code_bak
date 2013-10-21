@@ -1,0 +1,12 @@
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.exe.config
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.exe
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.pdb
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.exe
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.pdb
+D:\Code\Visual Studio 2012\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.csprojResolveAssemblyReference.cache
+D:\Code\C#\User\MonitorSystem\MonitorSystem\bin\Debug\MonitorSystem.exe.config
+D:\Code\C#\User\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.exe
+D:\Code\C#\User\MonitorSystem\MonitorSystem\obj\Debug\MonitorSystem.pdb
+D:\Code\C#\User\MonitorSystem_v130806\MonitorSystem\bin\Debug\MonitorSystem.exe.config
+D:\Code\C#\User\MonitorSystem_v130806\MonitorSystem\obj\Debug\MonitorSystem.exe
+D:\Code\C#\User\MonitorSystem_v130806\MonitorSystem\obj\Debug\MonitorSystem.pdb

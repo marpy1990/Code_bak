@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MonitorClient.CategoryValues" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAABUCAA=</HashCode>
+      <FileName>CategoryValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Config" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.ConfigForm" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQBAgAKBAAAAgCACAAAACACAAEgEAIACBGCAwBQA=</HashCode>
+      <FileName>ConfigForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.ProbeBuildingEvent" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.PerformanceCollectEvent" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.LoadConfigFormEvent" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.CreatTestFormEvent" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Global" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAABAAAAAAAAAQAAAAAAAAAAAAACIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.InstanceValues" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAIAABAAgAAAAAAAAAAAAAIAAAAAAAAAAAABE=</HashCode>
+      <FileName>InstanceValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.MainEntry" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MainEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.PerformanceCollector" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAIAAAAEIAAQAAAAAAAAAgAEAAAAQAAAAAABQ=</HashCode>
+      <FileName>PerformanceCollector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Processor" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAgAAAADgAAAgEAYCAAEQgEAIAAAAAJAQhAQAAVAA=</HashCode>
+      <FileName>Processor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Test" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.TestForm" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAACAAABAAAACAABASAAAAIAAAEAAAAAAAAAA=</HashCode>
+      <FileName>TestForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorClient.Properties.Settings" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
