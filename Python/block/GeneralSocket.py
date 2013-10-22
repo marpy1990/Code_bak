@@ -6,6 +6,8 @@
 
 version 1.0.1: 添加了 get_bind_block 和 get_bind_address 两个方法，分别返回绑定的模块名和地址名
 
+version 1.0.2: 添加了在debug模式下的日志记录
+
 Basic usage::
 
     >>> #thread1:
@@ -29,7 +31,7 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __date__ = "$Date: 2013-10-19$"
 
 # standard library modules
@@ -39,6 +41,7 @@ import socket
 
 # user library modules
 import VirtualSocket
+import Debug
 
 # exceptions
 class SocketBindError(Exception):
@@ -104,6 +107,7 @@ class GeneralSocket(object):
         """返回绑定的地址"""
         return self.__address_bind
 
+    @Debug.writelog
     def connect(self, block_name = None, address = None):
         """
         与名为block_name的模块或地址为address的网络端口建立连接
@@ -120,6 +124,7 @@ class GeneralSocket(object):
         else:
             pass
 
+    @Debug.writelog
     def listen(self, *args, **kwargs):
         """开始监听所有可能的连接"""
         self.__accept_queue = Queue.Queue(maxsize = 0)
@@ -135,6 +140,7 @@ class GeneralSocket(object):
             thread_remote.setDaemon(True)
             thread_remote.start()
 
+    @Debug.writelog
     def accept(self):
         """获得连入的GeneralSocket，需要先执行listen"""
         _sock, name = self.__accept_queue.get()
@@ -160,16 +166,19 @@ class GeneralSocket(object):
         except:
             pass
 
+    @Debug.writelog
     def send(self, text):
         """建立连接后，向GeneralSocket写入值，支持连续写入"""
         self.__socket.send(text)
         return self
-        
+    
+    @Debug.writelog    
     def recv(self, *args, **kwargs):
         """建立连接后，从GeneralSocket读出值"""
         text = self.__socket.recv(GeneralSocket.__MAX_BUFF)
         return text
 
+    @Debug.writelog
     def close(self):
         """关闭连接"""
         if not self.__socket == None:
