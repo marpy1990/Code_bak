@@ -6,6 +6,8 @@
 提供线程表管理所有线程。
 提供装饰器auto_register自动注册注销线程
 
+version 1.0.1: 修改了时间的表示方式，现在为 yyyy/mm/dd hh:mm:ss
+
 Basic usage::
 
     >>> threadpool = ThreadManagement(name)
@@ -20,7 +22,7 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __date__ = "$Date: 2013-10-14$"
 
 # standard library modules
@@ -59,7 +61,7 @@ class ThreadManagement(Block.Block):
         thread = threading.currentThread()
         if thread in self.thread_table:
             raise ThreadRegisterError(thread)
-        date = time.strftime("%Y-%m-%d-%H-%M-%S",time.localtime(time.time())) 
+        date = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())) 
         self.thread_table[thread]={"create_date": date}
 
     def cancel_thread(self):
