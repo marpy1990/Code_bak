@@ -32,8 +32,57 @@ class b2(base):
     def add(self, x, y):
         base.add(self, x)
         print x+y
-        
+
+def initlog():
+        import logging
+       
+        logger = logging.getLogger()
+
+        hdlr = logging.FileHandler('sendlog.txt')
+
+        formatter = logging.Formatter('%(threadName)s %(asctime)s %(levelname)s %(message)s')
+ 
+        hdlr.setFormatter(formatter)
+
+        logger.addHandler(hdlr)
+ 
+        logger.setLevel(logging.NOTSET)
+        return logger
+
+import sys
+class x(object):
+    """docstring for x"""
+    def __init__(self):
+        logging=initlog()
+        logging.debug('注册')
+    
+import inspect
+
+def get_caller_name():
+    x = inspect.stack()[-1][4][0]
+    for y in inspect.stack():
+        print y
+    xs = x.split(" ")
+    v=""
+    for v in xs[::-1]:
+        if v!="" and v!="\n":
+            break
+    vs = v.split(".")
+    return vs[0]
+
+class MyClass:
+    def function_one(self):
+        print get_caller_name()
+    
+    def fun(self):
+        self.function_one()
+        return 1
+
 if __name__ == '__main__':
+    #myclass = MyClass()
+    #a = myclass.fun()  
+    a=len("1")
+    print a
     #help(classmethod)
     #help(XmlTransport)
     #print threading.currentThread().ident
@@ -65,6 +114,7 @@ if __name__ == '__main__':
     a= A()
     a.q()
     """
+    """
     import Queue
     q=Queue.Queue(maxsize = 0)
     q.put((1,2))
@@ -72,7 +122,12 @@ if __name__ == '__main__':
     q.put((1,(1,2)))
     print q.get()
     
-
+    import socket
+    #bhelp(socket)
+    sock = socket.socket()
+    sock.connect(("www.baidu.com",80))
+    print sock.getsockname()
+    """
 
 
     

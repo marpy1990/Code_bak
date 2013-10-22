@@ -1,0 +1,186 @@
+
+2013-10-22 14:48:41,637 d:\code\python\block\debug.py ===start===
+
+2013-10-22 14:49:09,648 d:\code\python\block\debug.py ===start===
+2013-10-22 14:49:09,648 MainThread _writelog  enter
+
+2013-10-22 14:51:09,285 d:\code\python\block\debug.py ===start===
+2013-10-22 14:51:09,285 MainThread _writelog  enter
+2013-10-22 14:51:09,285 MainThread _writelog leave
+
+2013-10-22 14:52:30,138 d:\code\python\block\debug.py ===start===
+2013-10-22 14:52:30,138 MainThread _writelog enter
+2013-10-22 14:52:30,138 MainThread _writelog leave
+
+2013-10-22 14:53:07,637 d:\code\python\block\debug.py ===start===
+2013-10-22 14:53:07,637 MainThread _writelog enter
+
+2013-10-22 14:53:33,311 d:\code\python\block\debug.py ===start===
+2013-10-22 14:53:33,311 MainThread _writelog y = 2, x = 1enter
+
+2013-10-22 14:55:46,265 d:\code\python\block\debug.py ===start===
+2013-10-22 14:55:46,265 MainThread _writelog  enter
+2013-10-22 14:55:46,265 MainThread _writelog  leave
+
+2013-10-22 14:56:52,071 d:\code\python\block\debug.py ===start===
+2013-10-22 14:56:52,071 MainThread tes enter
+2013-10-22 14:56:52,071 MainThread tes leave
+
+2013-10-22 14:57:53,434 d:\code\python\block\debug.py ===start===
+2013-10-22 14:57:53,434 MainThread tes enter
+
+2013-10-22 14:58:14,448 d:\code\python\block\debug.py ===start===
+
+2013-10-22 15:00:21,134 d:\code\python\block\debug.py ===start===
+2013-10-22 15:00:21,134 MainThread test  enter
+2013-10-22 15:00:21,134 MainThread test  leave
+
+2013-10-22 15:00:46,388 d:\code\python\block\debug.py ===start===
+2013-10-22 15:00:46,388 MainThread test y = 2, x = 1 enter
+2013-10-22 15:00:46,388 MainThread test y = 2, x = 1 leave
+
+2013-10-22 15:02:35,813 d:\code\python\block\debug.py ===start===
+2013-10-22 15:02:35,813 MainThread test y = 2, x = 1 enter
+2013-10-22 15:02:35,813 MainThread test y = 2, x = 1 leave
+
+2013-10-22 15:02:47,417 d:\code\python\block\debug.py ===start===
+2013-10-22 15:02:47,417 MainThread test  1y = 2 enter
+2013-10-22 15:02:47,417 MainThread test  1y = 2 leave
+
+2013-10-22 15:04:10,730 d:\code\python\block\debug.py ===start===
+2013-10-22 15:04:10,730 MainThread test(1, y = 2) enter
+2013-10-22 15:04:10,730 MainThread test(1, y = 2) leave
+
+2013-10-22 15:04:41,894 d:\code\python\block\debug.py ===start===
+2013-10-22 15:04:41,894 MainThread test(1, y = 2) enter
+2013-10-22 15:04:41,894 MainThread test(1, y = 2) leave
+
+2013-10-22 15:04:54,457 d:\code\python\block\debug.py ===start===
+2013-10-22 15:04:54,457 MainThread test( enter
+2013-10-22 15:04:54,457 MainThread test( leave
+
+2013-10-22 15:05:19,680 d:\code\python\block\debug.py ===start===
+2013-10-22 15:05:19,680 MainThread test() enter
+2013-10-22 15:05:19,680 MainThread test() leave
+
+2013-10-22 15:10:13,094 d:\code\python\block\debug.py ===start===
+2013-10-22 15:10:13,094 MainThread test(1, x = 2) enter
+
+2013-10-22 15:10:21,456 d:\code\python\block\debug.py ===start===
+2013-10-22 15:10:21,456 MainThread test(1, y = 2) enter
+2013-10-22 15:10:21,456 MainThread test(1, y = 2) leave
+
+2013-10-22 16:01:24,940 ===start===
+
+2013-10-22 16:02:01,104 ===start===
+
+2013-10-22 16:02:19,589 ===start===
+
+2013-10-22 16:02:32,869 ===start===
+2013-10-22 16:02:32,869 MainThread y=2)
+.test(1, y = 2) enter
+2013-10-22 16:02:32,869 MainThread y=2)
+.test(1, y = 2) leave
+
+2013-10-22 16:03:12,658 ===start===
+2013-10-22 16:03:12,668 MainThread y=2)
+.test(1, y = 2) enter
+2013-10-22 16:03:12,668 MainThread y=2)
+.test(1, y = 2) leave
+
+2013-10-22 16:06:40,964 ===start===
+
+2013-10-22 16:07:01,783 ===start===
+
+2013-10-22 16:07:16,927 ===start===
+
+2013-10-22 16:07:31,578 ===start===
+
+2013-10-22 16:30:00,239 ===start===
+2013-10-22 16:30:00,239 MainThread Main.test(1, y = 2) enter
+2013-10-22 16:30:00,239 MainThread Main.test(1, y = 2) leave
+
+2013-10-22 16:31:14,052 ===start===
+2013-10-22 16:31:14,052 MainThread Main.test(<__main__.T instance at 0x01B2EAD0>, 1, y = 2) enter
+2013-10-22 16:31:14,052 MainThread Main.test(<__main__.T instance at 0x01B2EAD0>, 1, y = 2) leave
+
+2013-10-22 16:32:02,546 ===start===
+2013-10-22 16:32:02,546 MainThread Main.test(<__main__.T instance at 0x01B1FAD0>, 1, y = 2) enter
+2013-10-22 16:32:02,546 MainThread Main.test(<__main__.T instance at 0x01B1FAD0>, 1, y = 2) leave
+
+2013-10-22 16:35:28,059 ===start===
+2013-10-22 16:35:28,059 MainThread Main.test(<__main__.T instance at 0x01B3FAD0>, 1, y = 2) enter
+2013-10-22 16:35:28,059 MainThread Main.test(<__main__.T instance at 0x01B3FAD0>, 1, y = 2) leave
+
+2013-10-22 16:35:43,785 ===start===
+2013-10-22 16:35:43,795 MainThread Main.test(<__main__.T instance at 0x01BCFAD0>, 1, y = 2) enter
+2013-10-22 16:35:43,795 MainThread Main.test(<__main__.T instance at 0x01BCFAD0>, 1, y = 2) leave
+
+2013-10-22 16:38:57,283 ===start===
+2013-10-22 16:38:57,293 MainThread Main.test(<__main__.T instance at 0x01B2DBE8>, 1, y = 2) enter
+2013-10-22 16:38:57,293 MainThread Main.test(<__main__.T instance at 0x01B2DBE8>, 1, y = 2) leave
+
+2013-10-22 16:39:47,937 ===start===
+2013-10-22 16:39:47,937 MainThread test(<__main__.T instance at 0x01B4CAF8>, 1, y = 2) enter
+2013-10-22 16:39:47,937 MainThread test(<__main__.T instance at 0x01B4CAF8>, 1, y = 2) leave
+
+2013-10-22 16:42:04,210 ===start===
+2013-10-22 16:42:04,220 MainThread test(<__main__.T instance at 0x01B4CAF8>, 1, y = 2) enter
+2013-10-22 16:42:04,220 MainThread test(<__main__.T instance at 0x01B4CAF8>, 1, y = 2) leave
+
+2013-10-22 16:45:22,951 ===start===
+2013-10-22 16:45:22,961 MainThread listen(<__main__.GeneralSocket object at 0x01AED4B0>) enter
+2013-10-22 16:45:22,971 MainThread listen(<__main__.GeneralSocket object at 0x01AED4B0>) leave
+2013-10-22 16:45:22,971 test2 connect(<__main__.GeneralSocket object at 0x01AED6F0>, 's1') enter
+2013-10-22 16:45:22,971 test2 connect(<__main__.GeneralSocket object at 0x01AED6F0>, 's1') leave
+2013-10-22 16:45:22,971 test2 send(<__main__.GeneralSocket object at 0x01AED6F0>, 'msg1') enter
+2013-10-22 16:45:22,971 test2 send(<__main__.GeneralSocket object at 0x01AED6F0>, 'msg1') leave
+2013-10-22 16:45:22,971 test2 recv(<__main__.GeneralSocket object at 0x01AED6F0>) enter
+2013-10-22 16:45:22,971 test3 connect(<__main__.GeneralSocket object at 0x01AED8D0>, address = ('localhost', 1324)) enter
+2013-10-22 16:45:22,971 test1 accept(<__main__.GeneralSocket object at 0x01AED4B0>) enter
+2013-10-22 16:45:22,971 test1 accept(<__main__.GeneralSocket object at 0x01AED4B0>) leave
+2013-10-22 16:45:22,971 test1 recv(<__main__.GeneralSocket object at 0x01AF63D0>) enter
+2013-10-22 16:45:22,971 test1 recv(<__main__.GeneralSocket object at 0x01AF63D0>) leave
+2013-10-22 16:45:22,982 test3 connect(<__main__.GeneralSocket object at 0x01AED8D0>, address = ('localhost', 1324)) leave
+2013-10-22 16:45:22,982 test3 send(<__main__.GeneralSocket object at 0x01AED8D0>, 'msg2') enter
+2013-10-22 16:45:22,982 test3 send(<__main__.GeneralSocket object at 0x01AED8D0>, 'msg2') leave
+2013-10-22 16:45:22,982 test3 recv(<__main__.GeneralSocket object at 0x01AED8D0>) enter
+2013-10-22 16:45:24,971 test1 send(<__main__.GeneralSocket object at 0x01AF63D0>, 'check1') enter
+2013-10-22 16:45:24,971 test2 recv(<__main__.GeneralSocket object at 0x01AED6F0>) leave
+2013-10-22 16:45:24,971 test2 close(<__main__.GeneralSocket object at 0x01AED6F0>) enter
+2013-10-22 16:45:24,971 test2 close(<__main__.GeneralSocket object at 0x01AED6F0>) leave
+2013-10-22 16:45:24,971 test1 send(<__main__.GeneralSocket object at 0x01AF63D0>, 'check1') leave
+2013-10-22 16:45:24,971 test1 close(<__main__.GeneralSocket object at 0x01AF63D0>) enter
+2013-10-22 16:45:24,971 test1 close(<__main__.GeneralSocket object at 0x01AF63D0>) leave
+2013-10-22 16:45:24,971 test1 accept(<__main__.GeneralSocket object at 0x01AED4B0>) enter
+2013-10-22 16:45:24,971 test1 accept(<__main__.GeneralSocket object at 0x01AED4B0>) leave
+2013-10-22 16:45:24,971 test1 recv(<__main__.GeneralSocket object at 0x01AEDDB0>) enter
+2013-10-22 16:45:24,971 test1 recv(<__main__.GeneralSocket object at 0x01AEDDB0>) leave
+2013-10-22 16:45:25,971 MainThread close(<__main__.GeneralSocket object at 0x01AED4B0>) enter
+2013-10-22 16:45:25,971 MainThread close(<__main__.GeneralSocket object at 0x01AED4B0>) leave
+
+2013-10-22 16:46:53,302 ===start===
+2013-10-22 16:46:53,312 MainThread listen(<GeneralSocket.GeneralSocket object at 0x01BAFEB0>) enter
+2013-10-22 16:46:53,322 MainThread listen(<GeneralSocket.GeneralSocket object at 0x01BAFEB0>) leave
+2013-10-22 16:46:53,322 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BAFEB0>) enter
+2013-10-22 16:46:53,322 MainThread listen(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) enter
+2013-10-22 16:46:53,322 MainThread listen(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) leave
+2013-10-22 16:46:53,332 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) enter
+2013-10-22 16:46:53,332 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BAFEB0>) leave
+2013-10-22 16:46:53,332 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB74F0>) enter
+2013-10-22 16:46:53,332 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BAFEB0>) enter
+2013-10-22 16:46:54,553 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB74F0>) leave
+2013-10-22 16:46:54,563 __thread_handle_socket connect(<GeneralSocket.GeneralSocket object at 0x01BB7930>, block_name = 'b') enter
+2013-10-22 16:46:54,563 __thread_handle_socket connect(<GeneralSocket.GeneralSocket object at 0x01BB7930>, block_name = 'b') leave
+2013-10-22 16:46:54,563 __thread_handle_socket send(<GeneralSocket.GeneralSocket object at 0x01BB7930>, 'a send to b') enter
+2013-10-22 16:46:54,563 __thread_handle_socket send(<GeneralSocket.GeneralSocket object at 0x01BB7930>, 'a send to b') leave
+2013-10-22 16:46:54,563 __thread_handle_socket close(<GeneralSocket.GeneralSocket object at 0x01BB7930>) enter
+2013-10-22 16:46:54,563 __thread_handle_socket close(<GeneralSocket.GeneralSocket object at 0x01BB7930>) leave
+2013-10-22 16:46:54,563 __thread_handle_socket send(<GeneralSocket.GeneralSocket object at 0x01BB74F0>, 'recv') enter
+2013-10-22 16:46:54,563 __thread_handle_socket send(<GeneralSocket.GeneralSocket object at 0x01BB74F0>, 'recv') leave
+2013-10-22 16:46:54,563 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB74F0>) enter
+2013-10-22 16:46:54,563 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) leave
+2013-10-22 16:46:54,563 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB7950>) enter
+2013-10-22 16:46:54,563 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB7950>) leave
+2013-10-22 16:46:54,563 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) enter
+2013-10-22 16:46:55,553 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB74F0>) leave
