@@ -184,3 +184,39 @@
 2013-10-22 16:46:54,563 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB7950>) leave
 2013-10-22 16:46:54,563 __handle_socket accept(<GeneralSocket.GeneralSocket object at 0x01BB73F0>) enter
 2013-10-22 16:46:55,553 __thread_handle_socket recv(<GeneralSocket.GeneralSocket object at 0x01BB74F0>) leave
+
+2013-10-22 18:55:56,582 ===start===
+
+2013-10-22 18:56:46,151 ===start===
+
+2013-10-22 18:57:01,828 ===start===
+
+2013-10-22 18:57:49,844 ===start===
+2013-10-22 18:57:49,844 MainThread 6460 test(<__main__.T instance at 0x01BACAF8>, 1, y = 2) enter
+2013-10-22 18:57:49,845 MainThread 6460 test(<__main__.T instance at 0x01BACAF8>, 1, y = 2) leave
+
+2013-10-22 18:59:07,950 ===start===
+2013-10-22 18:59:07,970 MainThread 3360 listen(<GeneralSocket.GeneralSocket object at 0x01A84E10>) enter
+2013-10-22 18:59:07,973 MainThread 3360 listen(<GeneralSocket.GeneralSocket object at 0x01A84E10>) leave
+2013-10-22 18:59:07,973 __handle_socket 7504 accept(<GeneralSocket.GeneralSocket object at 0x01A84E10>) enter
+2013-10-22 18:59:07,974 MainThread 3360 listen(<GeneralSocket.GeneralSocket object at 0x01AE6350>) enter
+2013-10-22 18:59:07,976 MainThread 3360 listen(<GeneralSocket.GeneralSocket object at 0x01AE6350>) leave
+2013-10-22 18:59:07,977 __handle_socket 7060 accept(<GeneralSocket.GeneralSocket object at 0x01AE6350>) enter
+2013-10-22 18:59:07,980 __handle_socket 7504 accept(<GeneralSocket.GeneralSocket object at 0x01A84E10>) leave
+2013-10-22 18:59:07,986 __thread_handle_socket 7836 recv(<GeneralSocket.GeneralSocket object at 0x01AE6730>) enter
+2013-10-22 18:59:07,986 __handle_socket 7504 accept(<GeneralSocket.GeneralSocket object at 0x01A84E10>) enter
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 recv(<GeneralSocket.GeneralSocket object at 0x01AE6730>) leave
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 connect(<GeneralSocket.GeneralSocket object at 0x01AE6950>, block_name = 'b') enter
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 connect(<GeneralSocket.GeneralSocket object at 0x01AE6950>, block_name = 'b') leave
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 send(<GeneralSocket.GeneralSocket object at 0x01AE6950>, 'a send to b') enter
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 send(<GeneralSocket.GeneralSocket object at 0x01AE6950>, 'a send to b') leave
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 close(<GeneralSocket.GeneralSocket object at 0x01AE6950>) enter
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 close(<GeneralSocket.GeneralSocket object at 0x01AE6950>) leave
+2013-10-22 18:59:12,065 __handle_socket 7060 accept(<GeneralSocket.GeneralSocket object at 0x01AE6350>) leave
+2013-10-22 18:59:12,065 __thread_handle_socket 7836 send(<GeneralSocket.GeneralSocket object at 0x01AE6730>, 'recv') enter
+2013-10-22 18:59:12,075 __thread_handle_socket 7836 send(<GeneralSocket.GeneralSocket object at 0x01AE6730>, 'recv') leave
+2013-10-22 18:59:12,075 __handle_socket 7060 accept(<GeneralSocket.GeneralSocket object at 0x01AE6350>) enter
+2013-10-22 18:59:12,075 __thread_handle_socket 7544 recv(<GeneralSocket.GeneralSocket object at 0x01AE6AD0>) enter
+2013-10-22 18:59:12,075 __thread_handle_socket 7836 recv(<GeneralSocket.GeneralSocket object at 0x01AE6730>) enter
+2013-10-22 18:59:12,075 __thread_handle_socket 7544 recv(<GeneralSocket.GeneralSocket object at 0x01AE6AD0>) leave
+2013-10-22 18:59:13,065 __thread_handle_socket 7836 recv(<GeneralSocket.GeneralSocket object at 0x01AE6730>) leave

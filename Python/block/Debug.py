@@ -1,5 +1,7 @@
 # -*- coding: UTF-8 -*-
 """提供用于Debug的一些函数，仅在debug模式下起作用
+
+    version 1.0.1: 增加了一些日志选项
 """
 __docformat__ = "restructuredtext en"
 
@@ -8,7 +10,7 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __date__ = "$Date: 2013-10-22$"
 
 # standard library modules
@@ -26,7 +28,7 @@ def initlog():
     logger.setLevel(logging.NOTSET)
     logger.debug("start")
 
-    formatter = logging.Formatter('%(asctime)s %(threadName)s %(message)s')
+    formatter = logging.Formatter('%(asctime)s %(threadName)s %(thread)d %(message)s')
     hdlr.setFormatter(formatter)
     logger.addHandler(hdlr)
     logger.setLevel(logging.NOTSET)

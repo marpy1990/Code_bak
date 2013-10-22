@@ -81,8 +81,8 @@ class MyClass:
 if __name__ == '__main__':
     #myclass = MyClass()
     #a = myclass.fun()  
-    a=len("1")
-    print a
+    import logging
+    help(logging)
     #help(classmethod)
     #help(XmlTransport)
     #print threading.currentThread().ident
