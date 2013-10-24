@@ -81,8 +81,8 @@ class MyClass:
 if __name__ == '__main__':
     #myclass = MyClass()
     #a = myclass.fun()  
-    import logging
-    help(logging)
+    #import logging
+    #help(logging)
     #help(classmethod)
     #help(XmlTransport)
     #print threading.currentThread().ident
@@ -128,6 +128,9 @@ if __name__ == '__main__':
     sock.connect(("www.baidu.com",80))
     print sock.getsockname()
     """
+    import datetime
+    help(datetime)
+    print datetime.datetime.now().isoformat(' ')
 
 
     

@@ -8,6 +8,8 @@
 
 version 1.0.1: 修改了时间的表示方式，现在为 yyyy/mm/dd hh:mm:ss
 
+version 1.0.2: 采用datetime库获取当前时间，现在时间戳精确到微妙，为YYYY-MM-DD HH-MM-SS.SSSSSS
+
 Basic usage::
 
     >>> threadpool = ThreadManagement(name)
@@ -22,13 +24,13 @@ __all__ = [
 ]
 
 __author__ = "marpy"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __date__ = "$Date: 2013-10-14$"
 
 # standard library modules
 import threading
 import functools
-import time
+import datetime
 
 # user library modules
 import Block
@@ -61,7 +63,7 @@ class ThreadManagement(Block.Block):
         thread = threading.currentThread()
         if thread in self.thread_table:
             raise ThreadRegisterError(thread)
-        date = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())) 
+        date = datetime.datetime.now().isoformat(' ')
         self.thread_table[thread]={"create_date": date}
 
     def cancel_thread(self):
@@ -104,6 +106,7 @@ def new_thread(func):
 
 if __name__ == "__main__":
         import sys
+        import time
         m=ThreadManagement("1123")
         print m.thread_table
         @new_thread
@@ -111,12 +114,10 @@ if __name__ == "__main__":
             print cls.thread_table
             time.sleep(2)
         test(m)
-        """
         time.sleep(1)
         print m.thread_table
         time.sleep(1)
         print m.thread_table
         time.sleep(1)
         print m.thread_table
-        """
-        m.current_thread_info()
+        #m.current_thread_info()
